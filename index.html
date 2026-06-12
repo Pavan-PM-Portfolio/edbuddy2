@@ -1203,13 +1203,10 @@
 
   .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-    max-width: 820px;
+    max-width: 1100px;
     margin: 52px auto 0;
-  }
-  @media (max-width: 1000px) {
-    .testimonials-grid { max-width: 640px; }
   }
 
   .flip-card { perspective: 1400px; height: 210px; }
@@ -1699,7 +1696,7 @@
     .roles-inner .section-title { white-space: normal; }
     .testimonials-inner .section-title { white-space: normal; }
     .testimonials-grid { grid-template-columns: 1fr; max-width: 440px; }
-    .flip-card.d3, .flip-card.d4 { display: none; }
+    .flip-card.d3, .flip-card.d4, .flip-card.d5, .flip-card.d6 { display: none; }
     .trust-inner { padding: 32px 22px; border-radius: 18px; }
     .trust-stats { gap: 22px 26px; }
     .trust-divider { display: none; }
@@ -2621,6 +2618,64 @@
             <div class="testimonial-author">
               <div class="testimonial-avatar">AI</div>
               <div><div class="testimonial-name">Ananya Iyer</div><div class="testimonial-role">Ops Manager, Flipkart</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d5">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"Recruitment screening that used to eat my mornings now runs itself — I review, AI drafts."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DN</div>
+              <div><div class="testimonial-name">Deepa Nair</div><div class="testimonial-role">Talent Lead, Wipro</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"I automate the boring 80% of my reporting now. The other 20% is where I actually add value."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SG</div>
+              <div><div class="testimonial-name">Sanjay Gupta</div><div class="testimonial-role">Data Analyst, Myntra</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d6">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"Briefs, outlines, first drafts — what used to take a week now takes an afternoon."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">NP</div>
+              <div><div class="testimonial-name">Nisha Pillai</div><div class="testimonial-role">Content Strategist, Nykaa</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"Status reports and meeting notes write themselves now. My calendar finally breathes."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RD</div>
+              <div><div class="testimonial-name">Rohan Desai</div><div class="testimonial-role">Project Manager, Infosys</div></div>
             </div>
           </div>
         </div>
