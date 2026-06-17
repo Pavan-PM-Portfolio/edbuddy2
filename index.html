@@ -1717,6 +1717,64 @@
     .ft-top { grid-template-columns: 1fr 1fr; }
     .ft-bottom { flex-direction: column; align-items: flex-start; }
   }
+
+  /* ─── GLOBAL FOOTER (dark, layout B) ─── */
+  .sf { background:#0F0F0F; color:rgba(255,255,255,0.7); overflow:hidden; }
+  .sf-cta { background:#A3E635; }
+  .sf-cta-inner { max-width:1180px; margin:0 auto; padding:42px 28px; display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; }
+  .sf-cta-h { font-size:28px; font-weight:600; letter-spacing:-0.02em; color:#0a0a0a; line-height:1.15; }
+  .sf-cta-s { font-size:14px; color:rgba(10,10,10,0.62); margin-top:6px; }
+  .sf-cta-btn { background:#0a0a0a; color:#fff; font-size:15px; font-weight:600; padding:13px 24px; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; white-space:nowrap; transition:transform 0.15s; font-family:var(--font); letter-spacing:var(--tracking-tight); }
+  .sf-cta-btn:hover { transform:translateY(-1px); }
+  .sf-cta-btn svg { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-inner { max-width:1180px; margin:0 auto; padding:56px 28px 0; }
+  .sf-strip { display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:38px; border-bottom:0.5px solid rgba(255,255,255,0.1); }
+  .sf-brand { max-width:320px; }
+  .sf-logo { display:inline-flex; align-items:center; gap:10px; text-decoration:none; }
+  .sf-tile { width:34px; height:34px; border-radius:9px; background:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:18px; font-weight:600; letter-spacing:-1.2px; line-height:1; }
+  .sf-brandname { font-size:21px; font-weight:600; letter-spacing:-0.5px; color:#fff; }
+  .sf-tag { font-size:14px; color:rgba(255,255,255,0.5); line-height:1.55; margin:16px 0; }
+  .sf-trust { display:flex; align-items:center; gap:8px; font-size:12px; font-weight:500; color:rgba(255,255,255,0.55); margin-bottom:18px; }
+  .sf-trust svg { width:14px; height:14px; fill:none; stroke:#A3E635; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-soc { display:flex; gap:14px; }
+  .sf-soc a { color:#A3E635; transition:color 0.15s; }
+  .sf-soc a:hover { color:#BEF264; }
+  .sf-soc svg { width:19px; height:19px; fill:currentColor; }
+  .sf-nl { min-width:280px; }
+  .sf-nl-lbl { font-size:13px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:10px; }
+  .sf-nl-input { display:flex; gap:8px; max-width:340px; }
+  .sf-nl-input input { flex:1; background:rgba(255,255,255,0.06); border:0.5px solid rgba(255,255,255,0.2); border-radius:8px; padding:10px 12px; color:#fff; font-size:13px; font-family:var(--font); }
+  .sf-nl-input input::placeholder { color:rgba(255,255,255,0.4); }
+  .sf-nl-input button { background:#fff; color:#0a0a0a; border:none; border-radius:8px; padding:0 18px; font-size:13px; font-weight:600; cursor:pointer; font-family:var(--font); }
+  .sf-nl-input button:hover { opacity:0.9; }
+  .sf-contact { font-size:13px; color:rgba(255,255,255,0.5); margin-top:18px; line-height:1.7; }
+  .sf-contact a { color:rgba(255,255,255,0.72); text-decoration:none; }
+  .sf-contact a:hover { color:#fff; }
+  .sf-cols { display:grid; grid-template-columns:repeat(5,1fr); gap:24px; padding:40px 0; }
+  .sf-col h4 { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:rgba(255,255,255,0.4); margin-bottom:14px; }
+  .sf-col a { display:block; font-size:13px; color:rgba(255,255,255,0.62); text-decoration:none; padding:5px 0; transition:color 0.15s; }
+  .sf-col a:hover { color:#fff; }
+  .sf-col a.more { color:#A3E635; font-weight:500; margin-top:6px; display:inline-flex; align-items:center; gap:6px; }
+  .sf-col a.more svg { width:13px; height:13px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-trend { padding:30px 0; border-top:0.5px solid rgba(255,255,255,0.1); }
+  .sf-trend-lbl { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:rgba(255,255,255,0.4); margin-bottom:15px; }
+  .sf-pills { display:flex; flex-wrap:wrap; gap:9px; }
+  .sf-pills a { font-size:13px; color:rgba(255,255,255,0.7); border:0.5px solid rgba(255,255,255,0.18); border-radius:999px; padding:7px 15px; text-decoration:none; transition:0.15s; }
+  .sf-pills a:hover { border-color:rgba(255,255,255,0.55); color:#fff; }
+  .sf-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding:22px 0 44px; border-top:0.5px solid rgba(255,255,255,0.1); font-size:13px; color:rgba(255,255,255,0.4); }
+  .sf-bb-left { display:flex; align-items:center; gap:22px; flex-wrap:wrap; }
+  .sf-bb-legal { display:flex; gap:18px; flex-wrap:wrap; }
+  .sf-bb-legal a { color:rgba(255,255,255,0.4); text-decoration:none; }
+  .sf-bb-legal a:hover { color:#fff; }
+  .sf-bb-right { display:flex; align-items:center; gap:12px; }
+  .sf-region, .sf-totop { display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:500; color:rgba(255,255,255,0.72); background:transparent; border:0.5px solid rgba(255,255,255,0.2); border-radius:8px; padding:8px 13px; cursor:pointer; text-decoration:none; font-family:var(--font); }
+  .sf-region:hover, .sf-totop:hover { border-color:rgba(255,255,255,0.45); color:#fff; }
+  .sf-totop { font-weight:600; color:#fff; }
+  .sf-region svg, .sf-totop svg { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-region .chev { width:11px; height:11px; }
+  @media (max-width:980px) { .sf-cols { grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:640px) { .sf-cols { grid-template-columns:repeat(2,1fr); } .sf-cta-h { font-size:23px; } }
+
 </style>
 </head>
 <body>
@@ -2775,76 +2833,42 @@
 
 
 <!-- ─── FOOTER ─── -->
-<div class="footer-separator"></div>
-<footer>
-  <div class="footer-inner">
-
-    <div class="ft-top">
-      <div class="ft-brand">
-        <div class="ft-big">edBuddy</div>
-        <p class="ft-tagl">AI skills built around the real work you do — hands-on, role-based, and certified.</p>
-        <div class="ft-trustline"><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Trusted by 4,800+ professionals</div>
-        <div class="ft-nl">
-          <div class="ft-nl-lbl">Get one AI tip a week</div>
-          <div class="ft-nl-input"><input placeholder="you@work.com"><button>Join</button></div>
-        </div>
-        <div class="ft-contact">
-          <a href="mailto:hello@edbuddy.pro">hello@edbuddy.pro</a><br>
-          Mon–Sat · 10am–7pm IST
-        </div>
-        <div class="ft-soc">
-          <a aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V9.99H5.67v8.35zM7 8.84a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1m11.34 9.5v-4.58c0-2.45-1.31-3.59-3.06-3.59a2.64 2.64 0 0 0-2.39 1.32v-1.13h-2.67v8.35h2.67v-4.42c0-1.17.22-2.3 1.67-2.3s1.45 1.34 1.45 2.37v4.35z"/></svg></a>
-          <a aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L6 22H2.9l7.5-8.6L2 2h6.6l4.5 6.6zm-1.1 18h1.7L7.3 3.8H5.5z"/></svg></a>
-          <a aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.06 2.7.13 4 1.4 4.1 4.1.06 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.13 2.7-1.4 4-4.1 4.1-1.1.06-1.4.06-4.1.06s-3 0-4.1-.06c-2.7-.13-4-1.4-4.1-4.1C3.7 15 3.7 14.7 3.7 12s0-3 .06-4.1C3.9 5.2 5.2 3.9 7.9 3.76 9 3.7 9.3 3.7 12 3.7M12 6.87A5.13 5.13 0 1 0 17.13 12 5.13 5.13 0 0 0 12 6.87m0 8.46A3.33 3.33 0 1 1 15.33 12 3.33 3.33 0 0 1 12 15.33m5.34-9.87a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2"/></svg></a>
-          <a aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12M9.8 15.3V8.7l6 3.3z"/></svg></a>
-        </div>
+<footer class="sf">
+  <div class="sf-inner">
+    <div class="sf-strip">
+      <div class="sf-brand">
+        <a class="sf-logo" href="#"><span class="sf-tile"><span style="color:#0a0a0a">e</span><span style="color:#65A30D">b</span></span><span class="sf-brandname">edBuddy</span></a>
+        <p class="sf-tag">AI skills built around the real work you do — hands-on, role-based, and certified.</p>
+        <div class="sf-trust"><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Trusted by 4,800+ professionals</div>
+        <div class="sf-soc"><a aria-label="LinkedIn" href="#"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V9.99H5.67v8.35zM7 8.84a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1m11.34 9.5v-4.58c0-2.45-1.31-3.59-3.06-3.59a2.64 2.64 0 0 0-2.39 1.32v-1.13h-2.67v8.35h2.67v-4.42c0-1.17.22-2.3 1.67-2.3s1.45 1.34 1.45 2.37v4.35z"/></svg></a><a aria-label="X" href="#"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L6 22H2.9l7.5-8.6L2 2h6.6l4.5 6.6zm-1.1 18h1.7L7.3 3.8H5.5z"/></svg></a><a aria-label="Instagram" href="#"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.06 2.7.13 4 1.4 4.1 4.1.06 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.13 2.7-1.4 4-4.1 4.1-1.1.06-1.4.06-4.1.06s-3 0-4.1-.06c-2.7-.13-4-1.4-4.1-4.1C3.7 15 3.7 14.7 3.7 12s0-3 .06-4.1C3.9 5.2 5.2 3.9 7.9 3.76 9 3.7 9.3 3.7 12 3.7M12 6.87A5.13 5.13 0 1 0 17.13 12 5.13 5.13 0 0 0 12 6.87m0 8.46A3.33 3.33 0 1 1 15.33 12 3.33 3.33 0 0 1 12 15.33m5.34-9.87a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2"/></svg></a><a aria-label="YouTube" href="#"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12M9.8 15.3V8.7l6 3.3z"/></svg></a></div>
       </div>
-
-      <div class="ft-col">
-        <h4>Courses</h4>
-        <a href="#">AI for HR</a><a href="#">AI for Finance</a><a href="#">AI for Product</a><a href="#">AI for Marketing</a><a href="#">AI for Sales</a><a href="#">Claude &amp; ChatGPT Combo</a><a href="#">Co-Pilot for Everyday</a><a href="#">Prompt Engineering</a>
-        <a href="#courses" class="more">View all courses <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      </div>
-
-      <div class="ft-col">
-        <h4>By role</h4>
-        <a href="#">HR</a><a href="#">Finance</a><a href="#">Product</a><a href="#">Marketing &amp; Content</a><a href="#">Sales</a><a href="#">Operations</a><a href="#">Data &amp; Analytics</a><a href="#">Customer Support</a><a href="#">Leadership</a>
-      </div>
-
-      <div class="ft-col">
-        <h4>Company</h4>
-        <a href="#">About us</a><a href="#">Our story</a><a href="#">Careers</a><a href="#">Press &amp; media</a><a href="#">Blog</a><a href="#">Partners</a><a href="#">Affiliates</a><a href="#">Contact</a>
-      </div>
-
-      <div class="ft-col">
-        <h4>Solutions &amp; Resources</h4>
-        <a href="#">For individuals</a><a href="#">For teams</a><a href="#">For enterprise</a><a href="#">Pricing</a><a href="#">Free guides</a><a href="#">Prompt library</a><a href="#">Webinars</a><a href="#">Help center</a><a href="#">Verify a certificate</a>
-      </div>
-
-      <div class="ft-col">
-        <h4>Legal</h4>
-        <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a><a href="#">Refund Policy</a><a href="#">Acceptable Use</a><a href="#">Accessibility</a><a href="#">Security</a><a href="#">Do Not Sell My Info</a><a href="#">Sitemap</a>
+      <div class="sf-nl">
+        <div class="sf-nl-lbl">Get one AI tip a week</div>
+        <div class="sf-nl-input"><input placeholder="you@work.com"><button>Join</button></div>
+        <div class="sf-contact"><a href="mailto:hello@edbuddy.pro">hello@edbuddy.pro</a><br>Mon–Sat · 10am–7pm IST</div>
       </div>
     </div>
-
-    <div class="ft-trend">
-      <div class="ft-t-lbl">Trending right now</div>
-      <div class="ft-pills">
-        <a href="#">AI for HR</a><a href="#">AI for Finance</a><a href="#">Prompt Engineering</a><a href="#">ChatGPT for PMs</a><a href="#">AI for Marketing</a><a href="#">Claude for Analysts</a><a href="#">AI for Sales</a><a href="#">Co-Pilot Basics</a><a href="#">AI for Operations</a><a href="#">Resume with AI</a><a href="#">AI for Leaders</a><a href="#">Data with AI</a>
-      </div>
+    <div class="sf-cols">
+      <div class="sf-col"><h4>Courses</h4><a href="#">AI for HR</a><a href="#">AI for Finance</a><a href="#">AI for Product</a><a href="#">AI for Marketing</a><a href="#">AI for Sales</a><a href="#">Claude &amp; ChatGPT Combo</a><a href="#">Co-Pilot for Everyday</a><a href="#">Prompt Engineering</a><a href="#courses" class="more">View all courses <svg viewBox="0 0 16 16"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg></a></div>
+      <div class="sf-col"><h4>By role</h4><a href="#">HR</a><a href="#">Finance</a><a href="#">Product</a><a href="#">Marketing &amp; Content</a><a href="#">Sales</a><a href="#">Operations</a><a href="#">Data &amp; Analytics</a><a href="#">Customer Support</a><a href="#">Leadership</a></div>
+      <div class="sf-col"><h4>Company</h4><a href="#">About us</a><a href="#">Our story</a><a href="#">Careers</a><a href="#">Press &amp; media</a><a href="#">Blog</a><a href="#">Partners</a><a href="#">Affiliates</a><a href="#">Contact</a></div>
+      <div class="sf-col"><h4>Solutions &amp; Resources</h4><a href="#">For individuals</a><a href="#">For teams</a><a href="#">For enterprise</a><a href="#">Pricing</a><a href="#">Free guides</a><a href="#">Prompt library</a><a href="#">Webinars</a><a href="#">Help center</a><a href="#">Verify a certificate</a></div>
+      <div class="sf-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a><a href="#">Refund Policy</a><a href="#">Acceptable Use</a><a href="#">Accessibility</a><a href="#">Security</a><a href="#">Do Not Sell My Info</a><a href="#">Sitemap</a></div>
     </div>
-
-    <div class="ft-bottom">
-      <div class="ft-bb-left">
+    <div class="sf-trend">
+      <div class="sf-trend-lbl">Trending right now</div>
+      <div class="sf-pills"><a href="#">AI for HR</a><a href="#">AI for Finance</a><a href="#">Prompt Engineering</a><a href="#">ChatGPT for PMs</a><a href="#">AI for Marketing</a><a href="#">Claude for Analysts</a><a href="#">AI for Sales</a><a href="#">Co-Pilot Basics</a><a href="#">AI for Operations</a><a href="#">Resume with AI</a><a href="#">AI for Leaders</a><a href="#">Data with AI</a></div>
+    </div>
+    <div class="sf-bottom">
+      <div class="sf-bb-left">
         <span>© 2026 edBuddy. All rights reserved.</span>
-        <span class="ft-bb-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Accessibility</a><a href="#">Sitemap</a></span>
+        <span class="sf-bb-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Accessibility</a><a href="#">Sitemap</a></span>
       </div>
-      <div class="ft-bb-right">
-        <button class="ft-region"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg>India · English <svg class="ic chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
-        <a class="ft-totop" href="#navbar">Back to top <svg class="ic" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></a>
+      <div class="sf-bb-right">
+        <button class="sf-region"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>India<svg class="chev" viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg></button>
+        <a class="sf-totop" href="#navbar">Back to top<svg viewBox="0 0 16 16"><line x1="8" y1="13" x2="8" y2="3"/><polyline points="4 7 8 3 12 7"/></svg></a>
       </div>
     </div>
-
   </div>
 </footer>
 
