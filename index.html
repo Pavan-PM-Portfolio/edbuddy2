@@ -343,6 +343,22 @@
   .btn-primary:hover { opacity: 0.85; }
   .btn-primary:active { transform: scale(0.98); }
 
+  /* Mobile nav: hamburger + slide-down panel */
+  .nav-toggle { display: none; margin-left: auto; flex-shrink: 0; width: 42px; height: 42px; padding: 11px 9px; background: none; border: none; cursor: pointer; }
+  .nav-toggle span { display: block; height: 2px; width: 100%; background: #0a0a0a; border-radius: 2px; transition: transform 0.25s ease, opacity 0.2s ease; }
+  .nav-toggle span + span { margin-top: 5px; }
+  #navbar.menu-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #navbar.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  #navbar.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-mobile { display: none; position: absolute; top: var(--nav-h); left: 0; right: 0; background: #ffffff; border-bottom: 1px solid #ececec; box-shadow: 0 16px 28px rgba(10,10,10,0.07); flex-direction: column; padding: 6px 20px 20px; }
+  #navbar.menu-open .nav-mobile { display: flex; }
+  .nm-link { padding: 14px 6px; font-size: 16px; font-weight: 500; color: #404040; text-decoration: none; border-bottom: 1px solid var(--neutral-100); }
+  .nm-link:hover { color: #0a0a0a; }
+  .nm-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+  .nm-actions .nm-btn { width: 100%; justify-content: center; padding: 13px; font-size: 15px; box-sizing: border-box; }
+  .nm-actions .btn-ghost.nm-btn { border: 1px solid var(--neutral-300); color: #0a0a0a; }
+
   /* ─── HERO ─── */
   .hero {
     padding-top: var(--nav-h);
@@ -525,7 +541,7 @@
 
   /* ─── CATALOG STRIP (relocated marquee) ─── */
   .catalog-strip {
-    padding: 60px 0 48px;
+    padding: 96px 0 96px;
     border-top: 1px solid var(--neutral-100);
     border-bottom: 1px solid var(--neutral-100);
     overflow: hidden;
@@ -936,6 +952,7 @@
 
   @media (max-width: 1000px) { .exp-rail { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 640px) { .exp-rail { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 400px) { .exp-rail { grid-template-columns: 1fr; } }
 
   .exp-panel {
     display: none;
@@ -965,10 +982,10 @@
 
   .exp-actions { display: flex; justify-content: center; gap: 12px; margin-top: 30px; flex-wrap: wrap; }
   .exp-btn { display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: opacity 0.15s, background 0.15s; }
-  .exp-btn.primary { background: var(--black); color: var(--white); }
+  .exp-btn.primary { background: #A3E635; color: #0a0a0a; border: 1px solid #A3E635; }
   .exp-btn.primary:hover { opacity: 0.85; }
-  .exp-btn.secondary { background: #A3E635; color: #0a0a0a; border: 1px solid #A3E635; }
-  .exp-btn.secondary:hover { opacity: 0.85; }
+  .exp-btn.secondary { background: var(--white); color: var(--black); border: 1px solid var(--black); }
+  .exp-btn.secondary:hover { background: var(--neutral-100); }
   .exp-eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--neutral-400); margin-bottom: 12px; }
   .exp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
   .exp-title { font-size: clamp(26px, 2.6vw, 34px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; color: var(--black); }
@@ -1046,22 +1063,21 @@
   }
 
   .courses-actions .hero-cta-primary {
-    background: var(--black);
-    color: var(--white);
+    background: #A3E635;
+    color: #0a0a0a;
   }
   .courses-actions .hero-cta-primary:hover {
     opacity: 0.85;
   }
   .courses-actions .hero-cta-secondary {
-    background: #A3E635;
-    border-color: #A3E635;
-    color: #0a0a0a;
+    background: var(--white);
+    border-color: var(--black);
+    color: var(--black);
   }
   .courses-actions .hero-cta-secondary:hover {
-    opacity: 0.85;
-    background: #A3E635;
-    color: #0a0a0a;
-    border-color: #A3E635;
+    background: var(--neutral-100);
+    color: var(--black);
+    border-color: var(--black);
   }
 
   .courses-grid {
@@ -1320,7 +1336,7 @@
 
   /* ─── CTA SECTION ─── */
   .cta-section {
-    padding: 56px 32px;
+    padding: 96px 32px;
     background: transparent;
   }
 
@@ -1392,7 +1408,7 @@
     gap: 8px;
     padding: 14px 32px;
     border-radius: 8px;
-    background: var(--white);
+    background: #A3E635;
     color: var(--black);
     font-size: 15px;
     font-weight: 500;
@@ -1500,9 +1516,9 @@
     padding: 12px 24px; border-radius: 8px;
     text-decoration: none; transition: opacity 0.15s, background 0.15s;
   }
-  .compete-btn.primary { background: #A3E635; color: #0a0a0a; }
-  .compete-btn.primary:hover { opacity: 0.85; }
-  .compete-btn.secondary { background: var(--black); color: var(--white); border: 1px solid var(--black); }
+  .compete-btn.primary { background: var(--white); color: var(--black); border: 1px solid var(--black); }
+  .compete-btn.primary:hover { background: var(--neutral-100); }
+  .compete-btn.secondary { background: #A3E635; color: #0a0a0a; border: 1px solid #A3E635; }
   .compete-btn.secondary:hover { opacity: 0.85; }
 
   .compete-right { display: flex; flex-direction: column; gap: 18px; }
@@ -1621,7 +1637,7 @@
   .lead-field input:focus, .lead-field select:focus, .lead-field textarea:focus { outline: none; border-color: var(--black); }
   .lead-field textarea { resize: vertical; min-height: 74px; }
   .lead-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .lead-submit { width: 100%; background: var(--black); color: var(--white); border: 0; border-radius: 8px; padding: 13px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: var(--font); margin-top: 4px; transition: opacity 0.15s; }
+  .lead-submit { width: 100%; background: #A3E635; color: #0a0a0a; border: 0; border-radius: 8px; padding: 13px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: var(--font); margin-top: 4px; transition: opacity 0.15s; }
   .lead-submit:hover { opacity: 0.9; }
   @media (max-width: 760px) { .lead-inner { grid-template-columns: 1fr; gap: 28px; } .lead-row2 { grid-template-columns: 1fr; } .lead-copy { text-align: center; } }
 
@@ -1697,6 +1713,8 @@
     .courses-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .nav-links { display: none; }
+    .nav-right { display: none; }
+    .nav-toggle { display: block; }
   }
 
   @media (max-width: 600px) {
@@ -1704,7 +1722,8 @@
     nav { padding: 0 20px; }
     .hero-inner { padding: 64px 20px 36px; }
     .trust { padding: 32px 16px; }
-    .cta-section { padding: 28px 16px; }
+    .cta-section { padding: 64px 16px; }
+    .catalog-strip, .roles, .courses-section, .testimonials, .compete, .faq, .lead { padding-top: 64px; padding-bottom: 64px; }
     .cta-inner { padding: 48px 24px; border-radius: 18px; }
     .catalog-head .section-title { white-space: normal; }
     .roles-inner .section-title { white-space: normal; }
@@ -1901,6 +1920,27 @@
       </a>
     </div>
 
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"
+      onclick="var n=document.getElementById('navbar');n.classList.toggle('menu-open');this.setAttribute('aria-expanded',n.classList.contains('menu-open'));this.setAttribute('aria-label',n.classList.contains('menu-open')?'Close menu':'Open menu');">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile slide-down menu -->
+  <div class="nav-mobile">
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Courses</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">About</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Blog</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">For Teams</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Contact</a>
+    <div class="nm-actions">
+      <a href="#" class="btn-ghost nm-btn">Log in</a>
+      <a href="#" class="btn-primary nm-btn">Start Learning
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+      </a>
+    </div>
   </div>
 </nav>
 
