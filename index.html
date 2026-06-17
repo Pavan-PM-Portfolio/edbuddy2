@@ -367,29 +367,38 @@
     object-position: center;
     display: block;
   }
+  .hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.58) 50%, rgba(10,10,10,0.5) 100%);
+    pointer-events: none;
+  }
+  .hero-bg.is-placeholder::after { display: none; }
   .hero-bg.is-placeholder {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 24px;
-    background: linear-gradient(180deg, #fbfbfc 0%, #eef0f3 100%);
+    background: linear-gradient(160deg, #2b2b2b 0%, #131313 100%);
   }
   .hero-bg.is-placeholder::before {
     content: '';
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(10,10,10,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(10,10,10,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
     background-size: var(--grid-size) var(--grid-size);
     pointer-events: none;
   }
   .hero-bg-cap {
     position: relative;
     font-size: 12px;
-    color: var(--neutral-500);
-    background: var(--white);
-    border: 1px solid var(--neutral-200);
+    color: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius: 8px;
     padding: 6px 12px;
   }
@@ -418,11 +427,11 @@
     gap: 6px;
     padding: 5px 14px;
     border-radius: 100px;
-    border: 1px solid var(--neutral-200);
-    background: var(--white);
+    border: 1px solid rgba(255,255,255,0.22);
+    background: rgba(255,255,255,0.1);
     font-size: 12px;
     font-weight: 500;
-    color: var(--neutral-600);
+    color: rgba(255,255,255,0.9);
     margin-bottom: 24px;
     animation: fadeUp 0.5s ease both;
   }
@@ -431,7 +440,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--black);
+    background: #A3E635;
     flex-shrink: 0;
   }
 
@@ -440,21 +449,21 @@
     font-weight: 600;
     line-height: 1.02;
     letter-spacing: -0.04em;
-    color: var(--black);
+    color: #ffffff;
     margin-bottom: 22px;
     animation: fadeUp 0.5s 0.08s ease both;
   }
 
   .hero-h1 em {
     font-style: normal;
-    color: var(--black);
+    color: #ffffff;
   }
 
   .hero-sub {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--neutral-600);
+    color: rgba(255,255,255,0.82);
     max-width: 540px;
     margin: 0 auto 36px;
     animation: fadeUp 0.5s 0.14s ease both;
@@ -476,9 +485,9 @@
     padding: 13px 28px;
     border-radius: 8px;
     font-size: 15px;
-    font-weight: 500;
-    background: var(--black);
-    color: var(--white);
+    font-weight: 600;
+    background: #A3E635;
+    color: #0a0a0a;
     border: none;
     cursor: pointer;
     text-decoration: none;
@@ -498,9 +507,9 @@
     border-radius: 8px;
     font-size: 15px;
     font-weight: 500;
-    background: transparent;
-    color: var(--neutral-600);
-    border: 1px solid var(--neutral-200);
+    background: rgba(255,255,255,0.06);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.25);
     cursor: pointer;
     text-decoration: none;
     transition: border-color 0.15s, color 0.15s, background 0.15s;
@@ -509,9 +518,9 @@
   }
 
   .hero-cta-secondary:hover {
-    border-color: var(--neutral-300);
-    color: var(--black);
-    background: var(--neutral-50);
+    border-color: rgba(255,255,255,0.5);
+    color: #ffffff;
+    background: rgba(255,255,255,0.12);
   }
 
   /* ─── CATALOG STRIP (relocated marquee) ─── */
