@@ -583,16 +583,17 @@
   .cert-meta { display: flex; align-items: center; gap: 12px; margin-top: 12px; font-size: 13px; color: rgba(10,10,10,0.68); }
   .cert-meta span { display: inline-flex; align-items: center; gap: 5px; }
   .cert-meta svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-  .cert-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-top: 22px; padding: 12px 22px;
-    background: #0a0a0a; color: #ffffff;
-    border-radius: 8px; font-size: 15px; font-weight: 600;
+  .cert-cta {
+    position: absolute;
+    right: 26px;
+    bottom: 24px;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0a0a0a;
     text-decoration: none;
-    box-shadow: 0 1px 2px rgba(10,10,10,0.18);
-    transition: box-shadow 0.15s, transform 0.15s;
   }
-  .cert-btn:hover { box-shadow: 0 6px 18px rgba(10,10,10,0.28); transform: translateY(-1px); }
+  .cert-cta:hover { text-decoration: underline; }
 
   @media (max-width: 600px) {
     .cert-row { padding-inline: 16px; gap: 14px; }
@@ -1894,8 +1895,8 @@
           <span class="cert-eyebrow">HR Professionals</span>
           <h3 class="cert-title">AI for HR Professionals</h3>
           <div class="cert-meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6 hrs</span><span>Self-paced</span></div>
-          <a href="#" class="cert-btn">View course</a>
         </div>
+        <a href="#" class="cert-cta">View course</a>
       </div>
       <div class="cert-card">
         <img class="cert-bg" src="images/cert-finance.webp" alt="AI for Finance Teams">
@@ -1904,8 +1905,8 @@
           <span class="cert-eyebrow">Finance</span>
           <h3 class="cert-title">AI for Finance Teams</h3>
           <div class="cert-meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5 hrs</span><span>Self-paced</span></div>
-          <a href="#" class="cert-btn">View course</a>
         </div>
+        <a href="#" class="cert-cta">View course</a>
       </div>
       <div class="cert-card">
         <img class="cert-bg" src="images/cert-product.webp" alt="AI for Product Management">
@@ -1914,8 +1915,8 @@
           <span class="cert-eyebrow">Product</span>
           <h3 class="cert-title">AI for Product Management</h3>
           <div class="cert-meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7 hrs</span><span>Self-paced</span></div>
-          <a href="#" class="cert-btn">View course</a>
         </div>
+        <a href="#" class="cert-cta">View course</a>
       </div>
       <div class="cert-card">
         <img class="cert-bg" src="images/cert-combo.webp" alt="Claude &amp; ChatGPT Combo">
@@ -1924,8 +1925,8 @@
           <span class="cert-eyebrow">Most Popular</span>
           <h3 class="cert-title">Claude &amp; ChatGPT Combo</h3>
           <div class="cert-meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 hrs</span><span>Self-paced</span></div>
-          <a href="#" class="cert-btn">View course</a>
         </div>
+        <a href="#" class="cert-cta">View course</a>
       </div>
       <div class="cert-card">
         <img class="cert-bg" src="images/cert-everyday.webp" alt="Co-Pilot for Everyday Use">
@@ -1934,8 +1935,8 @@
           <span class="cert-eyebrow">General</span>
           <h3 class="cert-title">Co-Pilot for Everyday Use</h3>
           <div class="cert-meta"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4 hrs</span><span>Self-paced</span></div>
-          <a href="#" class="cert-btn">View course</a>
         </div>
+        <a href="#" class="cert-cta">View course</a>
       </div>
     </div>
   </section>
