@@ -951,8 +951,13 @@
   .exp-it-title { font-size: 14px; font-weight: 600; color: inherit; line-height: 1.25; }
 
   @media (max-width: 1000px) { .exp-rail { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 640px) { .exp-rail { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 400px) { .exp-rail { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .exp-rail { grid-template-columns: repeat(5, 1fr); gap: 8px; }
+    .exp-item { flex-direction: column; align-items: center; text-align: center; gap: 7px; padding: 12px 5px; min-width: 0; }
+    .exp-icb svg { width: 19px; height: 19px; }
+    .exp-it-title { font-size: 10px; line-height: 1.18; overflow-wrap: break-word; hyphens: auto; max-width: 100%; }
+  }
+  @media (max-width: 400px) { .exp-rail { gap: 6px; } .exp-item { padding: 10px 3px; } .exp-it-title { font-size: 9px; } }
 
   .exp-panel {
     display: none;
