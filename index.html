@@ -1768,7 +1768,32 @@
     .offer-rail { grid-auto-rows: 168px; }
     .offer-panel { padding: 32px 26px; }
     .offer-banner-name { font-size: 23px; }
+    /* bento titles: smaller so they don't wrap awkwardly in narrow cards */
+    .offer-name { font-size: 15px; line-height: 1.2; }
+    .offer-tile-body { padding: 14px; }
+    /* ratings card: compact so it fits its cell on phones */
+    .offer-stats-card { padding: 18px 14px; gap: 12px; }
+    .offer-stats-row { gap: 10px; }
+    .offer-stats-card .os-num { font-size: 18px; }
+    .offer-stats-card .os-label { font-size: 9.5px; margin-top: 4px; }
+    .offer-stats-card .os-sep { height: 24px; }
+    .offer-stats-badges { gap: 8px; }
+    .offer-stats-card .review-badge { padding: 7px 10px; gap: 7px; border-radius: 9px; }
+    .offer-stats-card .rb-logo svg { width: 18px; height: 18px; }
+    .offer-stats-card .rb-stars { font-size: 10px; letter-spacing: 0.5px; }
+    .offer-stats-card .rb-meta { font-size: 10.5px; }
   }
+
+  /* ─── VISION & MISSION ─── */
+  .values { padding: 96px 32px; }
+  .values-inner { max-width: 1160px; margin: 0 auto; }
+  .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .value-card { background: #fff; border: 1px solid #ececec; border-top: 3px solid #A3E635; border-radius: 18px; padding: 30px 26px; display: flex; flex-direction: column; box-shadow: 0 4px 16px rgba(10,10,10,0.05); }
+  .value-art { width: 84px; height: 84px; border-radius: 18px; background: rgba(163,230,53,0.14); display: flex; align-items: center; justify-content: center; color: #4d7c0f; margin-bottom: 24px; }
+  .value-art svg { width: 42px; height: 42px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .value-title { font-size: 18px; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 10px; }
+  .value-desc { font-size: 14px; color: var(--neutral-500); line-height: 1.55; }
+  @media (max-width: 820px) { .values-grid { grid-template-columns: 1fr 1fr; } }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
@@ -1786,7 +1811,7 @@
     .hero-inner { padding: 64px 20px 36px; }
     .trust { padding: 32px 16px; }
     .cta-section { padding: 64px 16px; }
-    .catalog-strip, .roles, .courses-section, .testimonials, .compete, .faq, .lead { padding-top: 64px; padding-bottom: 64px; }
+    .catalog-strip, .roles, .courses-section, .testimonials, .compete, .values, .faq, .lead { padding-top: 64px; padding-bottom: 64px; }
     .cta-inner { padding: 48px 24px; border-radius: 18px; }
     .catalog-head .section-title { white-space: normal; }
     .roles-inner .section-title { white-space: normal; }
@@ -2166,6 +2191,337 @@
 
 
 
+
+
+
+<!-- ─── VISION & MISSION ─── -->
+<section class="values" id="mission">
+  <div class="values-inner">
+    <h2 class="section-title">What drives us</h2>
+    <p class="section-sub">Our vision, our mission, and the principles behind every course.</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-title">Our vision</div>
+        <p class="value-desc">A world where every professional is fluent in AI — whatever their role or background.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-title">Our mission</div>
+        <p class="value-desc">Make AI practical and approachable through hands-on, role-based training that delivers real outcomes.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-title">Practical over theory</div>
+        <p class="value-desc">Every lesson maps to real work — you build, ship, and apply, not just watch.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-title">Built for your role</div>
+        <p class="value-desc">No one-size-fits-all syllabus — tracks shaped around what your job actually needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── COURSES SECTION ─── -->
+<section class="courses-section" id="courses">
+  <div class="courses-inner">
+
+    <div class="courses-head">
+      <h2 class="section-title">Everything we offer</h2>
+      <p class="section-sub">Role-based AI tracks built around the real work you do — hands-on and certified.</p>
+    </div>
+
+    <div class="offer-feature">
+      <div class="offer-panel">
+        <h2 class="offer-panel-title">Built for your role, <em>not a generic syllabus</em></h2>
+        <p class="offer-panel-sub">Six focused tracks, each one project-based — finish with a certificate worth sharing.</p>
+        <div class="offer-cta-row">
+          <a href="#" class="hero-cta-primary">View all courses
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+          </a>
+          <a href="#about" class="hero-cta-secondary">About us</a>
+        </div>
+      </div>
+      <a href="#" class="offer-banner">
+        <img src="images/offer-hr.webp" alt="AI for HR" class="offer-banner-img">
+        <div class="offer-banner-scrim"></div>
+        <div class="offer-banner-body">
+          <div class="offer-banner-name">AI for HR</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="offer-rail">
+      <a href="#" class="offer-tile">
+        <img src="images/offer-product.webp" alt="AI for Product" class="offer-tile-img">
+        <div class="offer-tile-scrim"></div>
+        <div class="offer-tile-body"><div class="offer-name">AI for Product</div></div>
+      </a>
+      <a href="#" class="offer-tile">
+        <img src="images/offer-finance.webp" alt="AI for Finance Teams" class="offer-tile-img">
+        <div class="offer-tile-scrim"></div>
+        <div class="offer-tile-body"><div class="offer-name">AI for Finance Teams</div></div>
+      </a>
+      <a href="#" class="offer-tile">
+        <img src="images/offer-combo.webp" alt="Claude and ChatGPT Combo" class="offer-tile-img">
+        <div class="offer-tile-scrim"></div>
+        <div class="offer-tile-body"><div class="offer-name">Claude &amp; ChatGPT Combo</div></div>
+      </a>
+      <a href="#" class="offer-tile">
+        <img src="images/offer-copilot.webp" alt="Co-Pilot for Everyday Use" class="offer-tile-img">
+        <div class="offer-tile-scrim"></div>
+        <div class="offer-tile-body"><div class="offer-name">Co-Pilot for Everyday Use</div></div>
+      </a>
+      <a href="#" class="offer-tile">
+        <img src="images/offer-sales.webp" alt="AI for Sales &amp; Marketing" class="offer-tile-img">
+        <div class="offer-tile-scrim"></div>
+        <div class="offer-tile-body"><div class="offer-name">AI for Sales &amp; Marketing</div></div>
+      </a>
+      <div class="offer-tile offer-stats-card">
+        <div class="offer-stats-row">
+          <div class="os-stat"><span class="os-num">4,800+</span><span class="os-label">Learners enrolled</span></div>
+          <span class="os-sep"></span>
+          <div class="os-stat"><span class="os-num">6</span><span class="os-label">Courses available</span></div>
+          <span class="os-sep"></span>
+          <div class="os-stat"><span class="os-num">100%</span><span class="os-label">Self-paced</span></div>
+        </div>
+        <div class="offer-stats-badges">
+          <a class="review-badge" href="https://www.trustpilot.com/review/edbuddy.com" target="_blank" rel="noopener noreferrer" aria-label="Read edBuddy reviews on Trustpilot">
+            <span class="rb-logo"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00b67a" d="M12 2l2.9 6.26L21.8 9l-5.4 4.55L18.1 21 12 17.27 5.9 21l1.7-7.45L2.2 9l6.9-.74z"/></svg></span>
+            <span class="rb-text"><span class="rb-stars tp">★★★★★</span><span class="rb-meta"><b>4.8</b> on Trustpilot</span></span>
+          </a>
+          <a class="review-badge" href="https://www.google.com/search?q=edBuddy+Pro+reviews" target="_blank" rel="noopener noreferrer" aria-label="Read edBuddy reviews on Google">
+            <span class="rb-logo"><svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg></span>
+            <span class="rb-text"><span class="rb-stars go">★★★★★</span><span class="rb-meta"><b>4.9</b> on Google</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <h2 class="section-title">Real outcomes, real professionals</h2>
+    <p class="section-sub">From HR to product, hear how professionals are putting these skills to work every day.</p>
+    <div class="testimonials-grid">
+
+      <div class="flip-card d1">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"I automated our monthly HR reporting in week two. Three hours of work now takes ten minutes — worth every rupee."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">PR</div>
+              <div><div class="testimonial-name">Priya Rajan</div><div class="testimonial-role">HR Manager, Infosys</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"Onboarding docs that used to take a full day now take twenty minutes. It genuinely changed how I work."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MJ</div>
+              <div><div class="testimonial-name">Meera Joshi</div><div class="testimonial-role">HR Business Partner, TCS</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d2">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"Explained in finance terms, not tech terms. I built my first AI-assisted forecast model on day three."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AK</div>
+              <div><div class="testimonial-name">Arjun Khanna</div><div class="testimonial-role">Finance Analyst, Deloitte</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"Built an AI forecast model I actually trust — and the certificate was a nice bonus at appraisal time."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">VR</div>
+              <div><div class="testimonial-name">Vikram Rao</div><div class="testimonial-role">Finance Manager, Paytm</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d3">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"I use Claude daily for user-story drafting now. It's cut my writing time clean in half."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SM</div>
+              <div><div class="testimonial-name">Sneha Mehta</div><div class="testimonial-role">Senior PM, Razorpay</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"Clear and practical, zero jargon. I finally understand what these tools can and can't do."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">KN</div>
+              <div><div class="testimonial-name">Karthik Nair</div><div class="testimonial-role">Product Designer, Zoho</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d4">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"Went from copy-pasting prompts to building real workflows. My team ships campaigns twice as fast."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RV</div>
+              <div><div class="testimonial-name">Rahul Verma</div><div class="testimonial-role">Marketing Lead, Swiggy</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"The everyday-use track is gold. My weekly reports and inbox triage now take minutes, not hours."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AI</div>
+              <div><div class="testimonial-name">Ananya Iyer</div><div class="testimonial-role">Ops Manager, Flipkart</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d5">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"Recruitment screening that used to eat my mornings now runs itself — I review, AI drafts."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DN</div>
+              <div><div class="testimonial-name">Deepa Nair</div><div class="testimonial-role">Talent Lead, Wipro</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"I automate the boring 80% of my reporting now. The other 20% is where I actually add value."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SG</div>
+              <div><div class="testimonial-name">Sanjay Gupta</div><div class="testimonial-role">Data Analyst, Myntra</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card d6">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
+            </div>
+            <p class="testimonial-quote">"Briefs, outlines, first drafts — what used to take a week now takes an afternoon."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">NP</div>
+              <div><div class="testimonial-name">Nisha Pillai</div><div class="testimonial-role">Content Strategist, Nykaa</div></div>
+            </div>
+          </div>
+          <div class="flip-face flip-back">
+            <span class="tf-mark">”</span>
+            <div class="tf-head">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
+            </div>
+            <p class="testimonial-quote">"Status reports and meeting notes write themselves now. My calendar finally breathes."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RD</div>
+              <div><div class="testimonial-name">Rohan Desai</div><div class="testimonial-role">Project Manager, Infosys</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ─── WHY EDBUDDY (AI chat) ─── -->
+<section class="compete" id="why-us">
+  <div class="compete-inner">
+    <h2 class="section-title">We asked the competition</h2>
+    <p class="section-sub">To be fair, we let ChatGPT answer for itself.</p>
+    <div class="compete-grid">
+      <div class="compete-left">
+        <div class="ai-chat">
+          <div class="ai-chat-top"><span class="ai-chat-av">AI</span>Live, unedited (mostly)</div>
+          <div class="ai-chat-q">Should I pay for an AI course if you're free?</div>
+          <div class="ai-chat-a">Flattering, but — I'm a chatbot. I answer what you ask. I won't hand you a path, real projects, or a certificate, and I definitely won't tell you what you don't know to ask yet. Honestly? Take the course. 😅<span class="ai-caret"></span></div>
+          <div class="ai-chat-by">— ChatGPT, probably</div>
+        </div>
+        <div class="compete-btns">
+          <a href="#contact" class="compete-btn secondary">Contact us</a>
+          <a href="#courses" class="compete-btn primary">All courses</a>
+        </div>
+      </div>
+      <div class="compete-right">
+        <div class="compete-lbl">What a free chatbot can't give you</div>
+        <div class="compete-list">
+          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>A structured path built for your role</div>
+          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Hands-on projects you actually keep</div>
+          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>A shareable certificate</div>
+          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>The stuff you don't know to ask</div>
+        </div>
+        <div class="compete-img"><img src="images/compete-visual.webp" alt="edBuddy certificate"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- ─── WHO IS THIS FOR ─── -->
 <section class="roles" id="roles">
   <div class="roles-inner">
@@ -2437,302 +2793,6 @@
 </section>
 
 
-<!-- ─── COURSES SECTION ─── -->
-<section class="courses-section" id="courses">
-  <div class="courses-inner">
-
-    <div class="courses-head">
-      <h2 class="section-title">Everything we offer</h2>
-      <p class="section-sub">Role-based AI tracks built around the real work you do — hands-on and certified.</p>
-    </div>
-
-    <div class="offer-feature">
-      <div class="offer-panel">
-        <h2 class="offer-panel-title">Built for your role, <em>not a generic syllabus</em></h2>
-        <p class="offer-panel-sub">Six focused tracks, each one project-based — finish with a certificate worth sharing.</p>
-        <div class="offer-cta-row">
-          <a href="#" class="hero-cta-primary">View all courses
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
-          </a>
-          <a href="#about" class="hero-cta-secondary">About us</a>
-        </div>
-      </div>
-      <a href="#" class="offer-banner">
-        <img src="images/offer-hr.webp" alt="AI for HR" class="offer-banner-img">
-        <div class="offer-banner-scrim"></div>
-        <div class="offer-banner-body">
-          <div class="offer-banner-name">AI for HR</div>
-        </div>
-      </a>
-    </div>
-
-    <div class="offer-rail">
-      <a href="#" class="offer-tile">
-        <img src="images/offer-product.webp" alt="AI for Product" class="offer-tile-img">
-        <div class="offer-tile-scrim"></div>
-        <div class="offer-tile-body"><div class="offer-name">AI for Product</div></div>
-      </a>
-      <a href="#" class="offer-tile">
-        <img src="images/offer-finance.webp" alt="AI for Finance Teams" class="offer-tile-img">
-        <div class="offer-tile-scrim"></div>
-        <div class="offer-tile-body"><div class="offer-name">AI for Finance Teams</div></div>
-      </a>
-      <a href="#" class="offer-tile">
-        <img src="images/offer-combo.webp" alt="Claude and ChatGPT Combo" class="offer-tile-img">
-        <div class="offer-tile-scrim"></div>
-        <div class="offer-tile-body"><div class="offer-name">Claude &amp; ChatGPT Combo</div></div>
-      </a>
-      <a href="#" class="offer-tile">
-        <img src="images/offer-copilot.webp" alt="Co-Pilot for Everyday Use" class="offer-tile-img">
-        <div class="offer-tile-scrim"></div>
-        <div class="offer-tile-body"><div class="offer-name">Co-Pilot for Everyday Use</div></div>
-      </a>
-      <a href="#" class="offer-tile">
-        <img src="images/offer-sales.webp" alt="AI for Sales &amp; Marketing" class="offer-tile-img">
-        <div class="offer-tile-scrim"></div>
-        <div class="offer-tile-body"><div class="offer-name">AI for Sales &amp; Marketing</div></div>
-      </a>
-      <div class="offer-tile offer-stats-card">
-        <div class="offer-stats-row">
-          <div class="os-stat"><span class="os-num">4,800+</span><span class="os-label">Learners enrolled</span></div>
-          <span class="os-sep"></span>
-          <div class="os-stat"><span class="os-num">6</span><span class="os-label">Courses available</span></div>
-          <span class="os-sep"></span>
-          <div class="os-stat"><span class="os-num">100%</span><span class="os-label">Self-paced</span></div>
-        </div>
-        <div class="offer-stats-badges">
-          <a class="review-badge" href="https://www.trustpilot.com/review/edbuddy.com" target="_blank" rel="noopener noreferrer" aria-label="Read edBuddy reviews on Trustpilot">
-            <span class="rb-logo"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00b67a" d="M12 2l2.9 6.26L21.8 9l-5.4 4.55L18.1 21 12 17.27 5.9 21l1.7-7.45L2.2 9l6.9-.74z"/></svg></span>
-            <span class="rb-text"><span class="rb-stars tp">★★★★★</span><span class="rb-meta"><b>4.8</b> on Trustpilot</span></span>
-          </a>
-          <a class="review-badge" href="https://www.google.com/search?q=edBuddy+Pro+reviews" target="_blank" rel="noopener noreferrer" aria-label="Read edBuddy reviews on Google">
-            <span class="rb-logo"><svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg></span>
-            <span class="rb-text"><span class="rb-stars go">★★★★★</span><span class="rb-meta"><b>4.9</b> on Google</span></span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ─── TESTIMONIALS ─── -->
-<section class="testimonials">
-  <div class="testimonials-inner">
-    <h2 class="section-title">Real outcomes, real professionals</h2>
-    <p class="section-sub">From HR to product, hear how professionals are putting these skills to work every day.</p>
-    <div class="testimonials-grid">
-
-      <div class="flip-card d1">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
-            </div>
-            <p class="testimonial-quote">"I automated our monthly HR reporting in week two. Three hours of work now takes ten minutes — worth every rupee."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">PR</div>
-              <div><div class="testimonial-name">Priya Rajan</div><div class="testimonial-role">HR Manager, Infosys</div></div>
-            </div>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
-            </div>
-            <p class="testimonial-quote">"Onboarding docs that used to take a full day now take twenty minutes. It genuinely changed how I work."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">MJ</div>
-              <div><div class="testimonial-name">Meera Joshi</div><div class="testimonial-role">HR Business Partner, TCS</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card d2">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
-            </div>
-            <p class="testimonial-quote">"Explained in finance terms, not tech terms. I built my first AI-assisted forecast model on day three."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">AK</div>
-              <div><div class="testimonial-name">Arjun Khanna</div><div class="testimonial-role">Finance Analyst, Deloitte</div></div>
-            </div>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
-            </div>
-            <p class="testimonial-quote">"Built an AI forecast model I actually trust — and the certificate was a nice bonus at appraisal time."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">VR</div>
-              <div><div class="testimonial-name">Vikram Rao</div><div class="testimonial-role">Finance Manager, Paytm</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card d3">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
-            </div>
-            <p class="testimonial-quote">"I use Claude daily for user-story drafting now. It's cut my writing time clean in half."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">SM</div>
-              <div><div class="testimonial-name">Sneha Mehta</div><div class="testimonial-role">Senior PM, Razorpay</div></div>
-            </div>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
-            </div>
-            <p class="testimonial-quote">"Clear and practical, zero jargon. I finally understand what these tools can and can't do."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">KN</div>
-              <div><div class="testimonial-name">Karthik Nair</div><div class="testimonial-role">Product Designer, Zoho</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card d4">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
-            </div>
-            <p class="testimonial-quote">"Went from copy-pasting prompts to building real workflows. My team ships campaigns twice as fast."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">RV</div>
-              <div><div class="testimonial-name">Rahul Verma</div><div class="testimonial-role">Marketing Lead, Swiggy</div></div>
-            </div>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
-            </div>
-            <p class="testimonial-quote">"The everyday-use track is gold. My weekly reports and inbox triage now take minutes, not hours."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">AI</div>
-              <div><div class="testimonial-name">Ananya Iyer</div><div class="testimonial-role">Ops Manager, Flipkart</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card d5">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
-            </div>
-            <p class="testimonial-quote">"Recruitment screening that used to eat my mornings now runs itself — I review, AI drafts."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">DN</div>
-              <div><div class="testimonial-name">Deepa Nair</div><div class="testimonial-role">Talent Lead, Wipro</div></div>
-            </div>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
-            </div>
-            <p class="testimonial-quote">"I automate the boring 80% of my reporting now. The other 20% is where I actually add value."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">SG</div>
-              <div><div class="testimonial-name">Sanjay Gupta</div><div class="testimonial-role">Data Analyst, Myntra</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flip-card d6">
-        <div class="flip-inner">
-          <div class="flip-face flip-front">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>Google</span>
-            </div>
-            <p class="testimonial-quote">"Briefs, outlines, first drafts — what used to take a week now takes an afternoon."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">NP</div>
-              <div><div class="testimonial-name">Nisha Pillai</div><div class="testimonial-role">Content Strategist, Nykaa</div></div>
-            </div>
-          </div>
-          <div class="flip-face flip-back">
-            <span class="tf-mark">”</span>
-            <div class="tf-head">
-              <div class="testimonial-stars">★★★★★</div>
-              <span class="tf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#00b67a"/><path fill="#fff" d="M12 5l1.8 3.9 4.3.46-3.35 2.83 1.05 4.6L12 14.6 8.15 16.8l1.05-4.6L5.85 9.36l4.3-.46z"/></svg>Trustpilot</span>
-            </div>
-            <p class="testimonial-quote">"Status reports and meeting notes write themselves now. My calendar finally breathes."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">RD</div>
-              <div><div class="testimonial-name">Rohan Desai</div><div class="testimonial-role">Project Manager, Infosys</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ─── WHY EDBUDDY (AI chat) ─── -->
-<section class="compete" id="why-us">
-  <div class="compete-inner">
-    <h2 class="section-title">We asked the competition</h2>
-    <p class="section-sub">To be fair, we let ChatGPT answer for itself.</p>
-    <div class="compete-grid">
-      <div class="compete-left">
-        <div class="ai-chat">
-          <div class="ai-chat-top"><span class="ai-chat-av">AI</span>Live, unedited (mostly)</div>
-          <div class="ai-chat-q">Should I pay for an AI course if you're free?</div>
-          <div class="ai-chat-a">Flattering, but — I'm a chatbot. I answer what you ask. I won't hand you a path, real projects, or a certificate, and I definitely won't tell you what you don't know to ask yet. Honestly? Take the course. 😅<span class="ai-caret"></span></div>
-          <div class="ai-chat-by">— ChatGPT, probably</div>
-        </div>
-        <div class="compete-btns">
-          <a href="#contact" class="compete-btn secondary">Contact us</a>
-          <a href="#courses" class="compete-btn primary">All courses</a>
-        </div>
-      </div>
-      <div class="compete-right">
-        <div class="compete-lbl">What a free chatbot can't give you</div>
-        <div class="compete-list">
-          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>A structured path built for your role</div>
-          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Hands-on projects you actually keep</div>
-          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>A shareable certificate</div>
-          <div class="compete-li"><span class="compete-chk"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>The stuff you don't know to ask</div>
-        </div>
-        <div class="compete-img"><img src="images/compete-visual.webp" alt="edBuddy certificate"></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- ─── LEAD FORM ─── -->
