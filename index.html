@@ -1802,12 +1802,18 @@
 
   /* ─── TALK TO OUR TEAM (contact form) ─── */
   .contact { padding: 56px 32px; }
-  .contact-band { max-width: 780px; margin: 0 auto; background: var(--black); border-radius: 22px; padding: 38px 36px; color: #fff; text-align: center; }
-  .contact-title { font-size: clamp(26px, 3vw, 36px); font-weight: 600; line-height: 1.08; letter-spacing: -0.03em; }
+  .contact-split { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.05fr; gap: 36px; align-items: start; }
+  .contact-panel { background: var(--black); color: #fff; border-radius: 20px; padding: 44px 40px; }
+  .contact-title { font-size: clamp(28px, 3.2vw, 40px); font-weight: 600; line-height: 1.06; letter-spacing: -0.03em; }
   .contact-title em { font-style: normal; color: #A3E635; }
-  .contact-sub { font-size: 15px; color: rgba(255,255,255,0.72); margin: 12px auto 0; max-width: 460px; line-height: 1.55; }
-  .contact-sub b { color: #fff; font-weight: 600; }
-  .cform-card { background: #fff; border-radius: 18px; padding: 28px; max-width: 540px; margin: 24px auto 0; text-align: left; box-shadow: 0 14px 40px rgba(10,10,10,0.25); }
+  .contact-sub { font-size: 16px; color: rgba(255,255,255,0.72); margin-top: 16px; line-height: 1.6; max-width: 360px; }
+  .contact-meta { margin-top: 32px; font-size: 15px; }
+  .cm-block + .cm-block { margin-top: 24px; }
+  .cm-lbl { color: rgba(255,255,255,0.6); }
+  .cm-big { font-size: 19px; font-weight: 700; margin-top: 2px; letter-spacing: -0.01em; }
+  .cm-link-row { margin-top: 4px; }
+  .cm-link { color: #fff; font-weight: 600; text-decoration: none; border-bottom: 2px solid #A3E635; }
+  .cform-card { background: #fff; border: 1px solid var(--neutral-200); border-radius: 18px; padding: 30px; box-shadow: 0 10px 30px rgba(10,10,10,0.06); }
   .cform-note { font-size: 13.5px; color: var(--neutral-500); margin-bottom: 18px; }
   .cform-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .cform-input { width: 100%; padding: 15px 16px; border: 1px solid var(--neutral-300); border-radius: 10px; font-size: 15px; font-family: var(--font); color: var(--black); background: #fff; margin-bottom: 14px; }
@@ -1816,8 +1822,12 @@
   select.cform-input { -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23737373' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; }
   .cform-submit { width: 100%; background: #A3E635; color: #0a0a0a; border: none; border-radius: 10px; padding: 15px; font-size: 15px; font-weight: 600; font-family: var(--font); cursor: pointer; margin-top: 4px; transition: opacity 0.15s; }
   .cform-submit:hover { opacity: 0.9; }
+  @media (max-width: 820px) {
+    .contact-split { grid-template-columns: 1fr; gap: 22px; }
+    .contact-sub { max-width: none; }
+  }
   @media (max-width: 560px) {
-    .contact-band { padding: 40px 20px; }
+    .contact-panel { padding: 32px 26px; }
     .cform-card { padding: 24px; }
     .cform-row { grid-template-columns: 1fr; }
   }
@@ -2250,9 +2260,21 @@
 
 <!-- ─── TALK TO OUR TEAM ─── -->
 <section class="contact" id="contact">
-  <div class="contact-band">
-    <h2 class="contact-title">Bring edBuddy <em>to your team</em></h2>
-    <p class="contact-sub">Upskilling more than a handful of people? Tell us about your team and we'll build a plan. Or call <b>+91 80 4718 5975</b>.</p>
+  <div class="contact-split">
+    <div class="contact-panel">
+      <h2 class="contact-title">Bring edBuddy <em>to your team</em></h2>
+      <p class="contact-sub">Upskilling more than a handful of people? Tell us about your team and we'll put together a plan.</p>
+      <div class="contact-meta">
+        <div class="cm-block">
+          <span class="cm-lbl">Ready to talk now? Give us a call.</span>
+          <div class="cm-big">+91 80 4718 5975</div>
+        </div>
+        <div class="cm-block">
+          <span class="cm-lbl">Already learning with us?</span>
+          <div class="cm-link-row"><a href="#" class="cm-link">Visit our Help Center</a></div>
+        </div>
+      </div>
+    </div>
     <div class="cform-card">
       <p class="cform-note">All fields are required.</p>
       <div class="cform-row">
@@ -2261,10 +2283,8 @@
       </div>
       <input class="cform-input" type="email" placeholder="Work email" aria-label="Work email">
       <input class="cform-input" type="text" placeholder="Company name" aria-label="Company name">
-      <div class="cform-row">
-        <select class="cform-input" aria-label="Team size"><option value="" disabled selected>Team size</option><option>2–10</option><option>11–50</option><option>51–200</option><option>200+</option></select>
-        <select class="cform-input" aria-label="Country"><option selected>India</option><option>United States</option><option>United Kingdom</option><option>Other</option></select>
-      </div>
+      <select class="cform-input" aria-label="Team size"><option value="" disabled selected>Team size</option><option>2–10</option><option>11–50</option><option>51–200</option><option>200+</option></select>
+      <select class="cform-input" aria-label="Country"><option selected>India</option><option>United States</option><option>United Kingdom</option><option>Other</option></select>
       <button class="cform-submit" type="button">Talk to our team →</button>
     </div>
   </div>
