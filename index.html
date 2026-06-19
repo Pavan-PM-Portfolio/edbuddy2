@@ -78,7 +78,7 @@
     padding: 0 32px;
     background: #ffffff;
     transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid transparent;
   }
 
   nav.scrolled {
@@ -373,7 +373,7 @@
     font-size: clamp(34px, 4.4vw, 58px); font-weight: 600; line-height: 1.04;
     letter-spacing: -0.04em; color: var(--black); animation: fadeUp 0.5s 0.06s ease both;
   }
-  .hero-h1 em { font-style: normal; color: #4d7c0f; }
+  .hero-h1 em { font-style: normal; color: #84CC16; }
   .hero-sub {
     font-size: 17px; line-height: 1.6; color: var(--neutral-600); margin-top: 20px;
     max-width: 440px; animation: fadeUp 0.5s 0.12s ease both;
@@ -1279,7 +1279,7 @@
 
   .cta-title em {
     font-style: normal;
-    color: rgba(255,255,255,0.4);
+    color: #ffffff;
   }
 
   .cta-sub {
@@ -1714,6 +1714,8 @@
     .cform-row { grid-template-columns: 1fr; }
   }
 
+  .section-title em, .lead-h em { font-style: normal; color: #84CC16; }
+
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
     .roles-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1958,8 +1960,8 @@
     <div class="hero-grid">
 
       <div class="hero-copy">
-        <h1 class="hero-h1">Run your entire career<br><em>on one AI skillset.</em></h1>
-        <p class="hero-sub">Self-paced AI courses built for HR, Finance, Product, and everyday professionals — no tech background needed.</p>
+        <h1 class="hero-h1">Stop Watching AI Happen.<br><em>Start Using It.</em></h1>
+        <p class="hero-sub">Hands-on programs designed for professionals who want to stay relevant, not replaceable.</p>
         <div class="hero-ctas">
           <a href="#courses" class="hero-cta-primary">Browse Courses
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
@@ -2002,7 +2004,7 @@
 <section class="catalog-strip">
 
   <div class="catalog-head">
-    <h2 class="section-title">Trending Certifications &amp; Skills</h2>
+    <h2 class="section-title">Trending Certifications &amp; <em>Skills</em></h2>
     <p class="section-sub">Self-paced, role-based tracks — build job-ready AI skills and earn a shareable certificate on completion.</p>
   </div>
 
@@ -2126,7 +2128,7 @@
 <!-- ─── VISION & MISSION ─── -->
 <section class="values" id="mission">
   <div class="values-inner">
-    <h2 class="section-title">What drives us</h2>
+    <h2 class="section-title">What <em>drives us</em></h2>
     <p class="section-sub">Our vision, our mission, and the principles behind every course.</p>
     <div class="values-grid">
       <div class="value-card">
@@ -2188,7 +2190,7 @@
   <div class="courses-inner">
 
     <div class="courses-head">
-      <h2 class="section-title">Everything we offer</h2>
+      <h2 class="section-title">Everything <em>we offer</em></h2>
       <p class="section-sub">Role-based AI tracks built around the real work you do — hands-on and certified.</p>
     </div>
 
@@ -2266,7 +2268,7 @@
 <!-- ─── TESTIMONIALS ─── -->
 <section class="testimonials">
   <div class="testimonials-inner">
-    <h2 class="section-title">Real outcomes, real professionals</h2>
+    <h2 class="section-title">Real outcomes, <em>real professionals</em></h2>
     <p class="section-sub">From HR to product, hear how professionals are putting these skills to work every day.</p>
     <div class="testimonials-grid">
 
@@ -2454,7 +2456,7 @@
 <!-- ─── WHY EDBUDDY (AI chat) ─── -->
 <section class="compete" id="why-us">
   <div class="compete-inner">
-    <h2 class="section-title">We asked the competition</h2>
+    <h2 class="section-title">We asked the <em>competition</em></h2>
     <p class="section-sub">To be fair, we let ChatGPT answer for itself.</p>
     <div class="compete-grid">
       <div class="compete-left">
@@ -2487,7 +2489,7 @@
 <!-- ─── WHO IS THIS FOR ─── -->
 <section class="roles" id="roles">
   <div class="roles-inner">
-    <h2 class="section-title">Finally, AI explained in your context</h2>
+    <h2 class="section-title">Finally, AI explained <em>in your context</em></h2>
     <p class="section-sub">No generic tutorials. Every course is designed around the real workflows of your specific role.</p>
     <div class="exp">
       <input type="radio" name="role" id="role-1" checked>
@@ -2761,7 +2763,7 @@
 <section class="lead" id="get-started">
   <div class="lead-inner">
     <div class="lead-copy">
-      <h2 class="lead-h">Let's find the right<br>track for you</h2>
+      <h2 class="lead-h">Let's find the right<br><em>track for you</em></h2>
       <p class="lead-sub">Tell us a little about your work and what you're hoping AI can take off your plate. We'll do the rest.</p>
       <div class="lead-img"><img src="images/get-started.webp" alt="Learn AI with edBuddy Pro"></div>
     </div>
@@ -2801,7 +2803,7 @@
 <!-- ─── FAQ ─── -->
 <section class="faq" id="faq">
   <div class="faq-inner">
-    <h2 class="section-title">Frequently asked questions</h2>
+    <h2 class="section-title">Frequently asked <em>questions</em></h2>
     <p class="section-sub">Everything you need to know before you start. Still stuck? Reach out and the team will help.</p>
 
     <div class="faq-grid">
