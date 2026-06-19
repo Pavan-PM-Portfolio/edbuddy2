@@ -121,10 +121,9 @@
     margin: 0 36px;
     list-style: none;
   }
-  .nav-links > li:first-child { margin-right: auto; }
+  .nav-links > li:first-child { margin-right: auto; margin-left: 48px; }
 
-  .nav-links a,
-  .nav-dropdown-trigger {
+  .nav-links a {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -135,19 +134,37 @@
     color: var(--neutral-600);
     text-decoration: none;
     background: none;
-    border: none;
     cursor: pointer;
     transition: color 0.15s, background 0.15s;
     letter-spacing: var(--tracking-tight);
     font-family: var(--font);
     white-space: nowrap;
   }
+  .nav-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    background: #0a0a0a;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.1s;
+    letter-spacing: var(--tracking-tight);
+    font-family: var(--font);
+    white-space: nowrap;
+  }
 
-  .nav-links a:hover,
-  .nav-dropdown-trigger:hover {
+  .nav-links a:hover {
     color: var(--black);
     background: var(--neutral-100);
   }
+  .nav-dropdown-trigger:hover { opacity: 0.85; }
+  .nav-dropdown-trigger:active { transform: scale(0.98); }
 
   .nav-links .chevron {
     width: 14px;
@@ -165,7 +182,6 @@
     position: relative;
   }
 
-  .nav-dropdown-wrapper:hover .chevron,
   .nav-dropdown-wrapper.open .chevron {
     transform: rotate(180deg);
   }
@@ -202,7 +218,6 @@
     transform: translateX(-50%) rotate(45deg);
   }
 
-  .nav-dropdown-wrapper:hover .mega-menu,
   .nav-dropdown-wrapper.open .mega-menu {
     display: grid;
   }
@@ -899,8 +914,8 @@
   #role-8:checked ~ .exp-rail label[for="role-8"],
   #role-9:checked ~ .exp-rail label[for="role-9"],
   #role-10:checked ~ .exp-rail label[for="role-10"] {
-    background: var(--black);
-    color: var(--white);
+    background: #A3E635;
+    color: #0a0a0a;
   }
 
   #role-1:checked ~ .exp-panels .exp-panel:nth-child(1),
@@ -1258,11 +1273,7 @@
     display: grid; grid-template-columns: 1.05fr 1fr; gap: 46px; align-items: center;
   }
   .cta-content { text-align: left; max-width: none; position: relative; z-index: 1; }
-  .cta-glow {
-    position: absolute; z-index: 0; width: 460px; height: 300px; bottom: -90px; right: -50px;
-    border-radius: 50%; background: radial-gradient(circle, rgba(163,230,53,0.30), transparent 64%);
-    filter: blur(46px); pointer-events: none;
-  }
+  .cta-glow { display: none; }
   .cta-steps { display: flex; flex-direction: column; gap: 18px; position: relative; z-index: 1; }
   .cta-step { display: flex; gap: 14px; align-items: flex-start; }
   .cta-no { width: 30px; height: 30px; border-radius: 50%; background: #A3E635; color: #0a0a0a; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -1416,7 +1427,7 @@
   }
   .compete-btn.primary { background: var(--white); color: var(--black); border: 1px solid var(--black); }
   .compete-btn.primary:hover { background: var(--neutral-100); }
-  .compete-btn.secondary { background: #0a0a0a; color: #ffffff; border: 1px solid #0a0a0a; }
+  .compete-btn.secondary { background: #A3E635; color: #0a0a0a; border: 1px solid #A3E635; }
   .compete-btn.secondary:hover { opacity: 0.85; }
 
   .compete-right { display: flex; flex-direction: column; gap: 18px; }
@@ -1933,17 +1944,14 @@
           </a>
         </div>
       </li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
       <li><a href="#">For Business</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">About Us</a></li>
     </ul>
 
     <!-- Right CTAs -->
     <div class="nav-right">
-      <a href="#" class="btn-primary">
-        Start Learning
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
-      </a>
+      <a href="#" class="btn-primary">Login</a>
     </div>
 
     <!-- Mobile hamburger -->
@@ -1957,13 +1965,11 @@
   <!-- Mobile slide-down menu -->
   <div class="nav-mobile">
     <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Courses</a>
-    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">About</a>
-    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Blog</a>
     <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">For Business</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Blogs</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">About Us</a>
     <div class="nm-actions">
-      <a href="#" class="btn-primary nm-btn">Start Learning
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
-      </a>
+      <a href="#" class="btn-primary nm-btn">Login</a>
     </div>
   </div>
 </nav>
