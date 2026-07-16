@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI for HR Professionals — 6-Hour Course &amp; Certificate | edBuddy Pro</title>
+<meta name="description" content="Hands-on AI course for HR professionals. Screen CVs, write JDs in 8 minutes, build interview guides and survey readouts. 6 hours, 5 real projects, certificate. No code. 7-day refund.">
+<link rel="canonical" href="https://edbuddy.pro/courses/ai-for-hr">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="edBuddy Pro">
+<meta property="og:title" content="AI for HR Professionals — edBuddy Pro">
+<meta property="og:description" content="Transform hiring, automate onboarding and generate policy docs in minutes — without touching a line of code.">
+<meta property="og:url" content="https://edbuddy.pro/courses/ai-for-hr">
+<meta property="og:image" content="https://edbuddy.pro/images/cert-hr.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI for HR Professionals — edBuddy Pro">
+<meta name="twitter:description" content="6 hours, 5 real projects, certificate. No code needed.">
+<meta name="twitter:image" content="https://edbuddy.pro/images/cert-hr.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "@id": "https://edbuddy.pro/courses/ai-for-hr#course",
+      "name": "AI for HR Professionals",
+      "description": "Use AI to transform hiring, automate onboarding and generate policy documents in minutes - without touching a line of code.",
+      "url": "https://edbuddy.pro/courses/ai-for-hr",
+      "provider": { "@type": "Organization", "name": "edBuddy Pro", "url": "https://edbuddy.pro/" },
+      "inLanguage": "en",
+      "educationalLevel": "Beginner",
+      "teaches": [
+        "Writing job descriptions with AI",
+        "CV screening against a defined rubric",
+        "Structured interview guides and scorecards",
+        "Role-specific onboarding plans",
+        "People analytics and survey analysis",
+        "AI privacy, DPDP and policy limits for HR"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "ratingCount": "312"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://edbuddy.pro/courses/ai-for-hr"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT6H"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://edbuddy.pro/" },
+        { "@type": "ListItem", "position": 2, "name": "Courses", "item": "https://edbuddy.pro/courses" },
+        { "@type": "ListItem", "position": 3, "name": "AI for HR Professionals", "item": "https://edbuddy.pro/courses/ai-for-hr" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white: #ffffff;
+    --neutral-50: #fafafa;
+    --neutral-100: #f5f5f5;
+    --neutral-200: #e5e5e5;
+    --neutral-300: #d4d4d4;
+    --neutral-400: #a3a3a3;
+    --neutral-500: #737373;
+    --neutral-600: #525252;
+    --neutral-800: #262626;
+    --neutral-900: #171717;
+    --black: #0a0a0a;
+    --font: 'Inter', -apple-system, sans-serif;
+    --tracking-tight: -0.02em;
+    --nav-h: 64px;
+    --grid-size: 48px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font);
+    letter-spacing: var(--tracking-tight);
+    background: var(--white);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* ─── GLOBAL GRID — the brand signature, carried across the whole page ─── */
+  .page-grid {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(10,10,10,0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(10,10,10,0.045) 1px, transparent 1px);
+    background-size: var(--grid-size) var(--grid-size);
+    background-position: center top;
+  }
+  /* Every band sits above the lattice; light bands are transparent so it shows through */
+  .co-hero, .co-bar, .co-out, .co-fit, .co-curr, .co-proj,
+  .co-tools, .co-inst, .co-cert, .co-voices, .co-faq, .co-cta,
+  footer {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ─── NAVBAR (shared with index.html — keep in sync) ─── */
+  /* ─── NAVBAR ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--nav-h);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    background: #ffffff;
+    transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
+    border-bottom: 1px solid transparent;
+  }
+
+  nav.scrolled {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom-color: rgba(10,10,10,0.08);
+  }
+
+  .nav-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* Logo */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .nav-logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+
+  /* Center nav links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 32px;
+    margin: 0 36px;
+    list-style: none;
+  }
+  .nav-links > li:first-child { margin-left: 48px; }
+  .nav-search { margin-right: auto; display: flex; align-items: center; gap: 9px; background: #fff; border: 1.5px solid #0a0a0a; border-radius: 8px; padding: 9px 14px; width: 230px; color: var(--neutral-500); }
+  .nav-search svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+  .nav-search input { border: none; background: none; outline: none; font-size: 14px; font-family: var(--font); color: var(--black); width: 100%; }
+  .nav-search input::placeholder { color: var(--neutral-500); }
+  .nav-secondary { display: flex; align-items: center; gap: 18px; }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutral-600);
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+    letter-spacing: var(--tracking-tight);
+    font-family: var(--font);
+    white-space: nowrap;
+  }
+  .nav-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    background: #0a0a0a;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.1s;
+    letter-spacing: var(--tracking-tight);
+    font-family: var(--font);
+    white-space: nowrap;
+  }
+
+  .nav-links a:hover {
+    color: var(--black);
+    background: var(--neutral-100);
+  }
+  .nav-dropdown-trigger:hover { opacity: 0.85; }
+  .nav-dropdown-trigger:active { transform: scale(0.98); }
+
+  .nav-links .chevron {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+
+  .nav-dropdown-wrapper {
+    position: relative;
+  }
+
+  .nav-dropdown-wrapper.open .chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Mega menu */
+  .mega-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 680px;
+    background: var(--white);
+    border: 1px solid var(--neutral-200);
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.10), 0 1px 3px rgba(0,0,0,0.06);
+    padding: 20px;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    z-index: 200;
+  }
+
+  .mega-menu::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--white);
+    border-left: 1px solid var(--neutral-200);
+    border-top: 1px solid var(--neutral-200);
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .nav-dropdown-wrapper.open .mega-menu {
+    display: grid;
+  }
+
+  .mega-menu-header {
+    grid-column: 1 / -1;
+    padding: 4px 8px 12px;
+    border-bottom: 1px solid var(--neutral-100);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mega-menu-header span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--neutral-400);
+  }
+
+  .mega-menu-header a {
+    font-size: 12px;
+    color: var(--neutral-500);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .mega-menu-header a:hover { color: var(--black); }
+
+  .course-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.12s;
+    cursor: pointer;
+  }
+
+  .course-item:hover { background: var(--neutral-50); }
+
+  .course-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--neutral-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .course-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--neutral-600);
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .course-item:hover .course-icon { background: var(--neutral-200); }
+
+  .course-item-text { display: flex; flex-direction: column; gap: 2px; }
+
+  .course-item-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.3;
+  }
+
+  .course-item-sub {
+    font-size: 12px;
+    color: var(--neutral-500);
+    line-height: 1.4;
+  }
+
+  .course-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 100px;
+    background: var(--black);
+    color: var(--white);
+    margin-left: 6px;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  /* Nav right */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .btn-ghost {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutral-600);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.15s, background 0.15s;
+    font-family: var(--font);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .btn-ghost:hover { color: var(--black); background: var(--neutral-100); }
+
+  .btn-primary {
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #0a0a0a;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.1s;
+    font-family: var(--font);
+    letter-spacing: var(--tracking-tight);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .btn-primary:hover { opacity: 0.85; }
+  .btn-primary:active { transform: scale(0.98); }
+
+  /* Mobile nav: hamburger + slide-down panel */
+  .nav-toggle { display: none; margin-left: auto; flex-shrink: 0; width: 42px; height: 42px; padding: 11px 9px; background: none; border: none; cursor: pointer; }
+  .nav-toggle span { display: block; height: 2px; width: 100%; background: #0a0a0a; border-radius: 2px; transition: transform 0.25s ease, opacity 0.2s ease; }
+  .nav-toggle span + span { margin-top: 5px; }
+  #navbar.menu-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #navbar.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  #navbar.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-mobile { display: none; position: absolute; top: var(--nav-h); left: 0; right: 0; background: #ffffff; border-bottom: 1px solid #ececec; box-shadow: 0 16px 28px rgba(10,10,10,0.07); flex-direction: column; padding: 6px 20px 20px; }
+  #navbar.menu-open .nav-mobile { display: flex; }
+  .nm-link { padding: 14px 6px; font-size: 16px; font-weight: 500; color: #404040; text-decoration: none; border-bottom: 1px solid var(--neutral-100); }
+  .nm-link:hover { color: #0a0a0a; }
+  .nm-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+  .nm-actions .nm-btn { width: 100%; justify-content: center; padding: 13px; font-size: 15px; box-sizing: border-box; }
+  .nm-actions .btn-ghost.nm-btn { border: 1px solid var(--neutral-300); color: #0a0a0a; }
+
+  /* ─── SHARED BUTTONS ─── */
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; animation: fadeUp 0.5s 0.18s ease both; }
+  .hero-cta-primary {
+    padding: 14px 26px; border-radius: 8px; font-size: 15px; font-weight: 600;
+    background: #0a0a0a; color: #ffffff; border: none; cursor: pointer; text-decoration: none;
+    font-family: var(--font); letter-spacing: var(--tracking-tight); display: inline-flex; align-items: center; gap: 8px;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  .hero-cta-primary:hover { opacity: 0.85; }
+  .hero-cta-primary:active { transform: scale(0.98); }
+  .hero-ghost {
+    padding: 14px 26px; border-radius: 8px; font-size: 15px; font-weight: 500;
+    background: #fff; color: var(--black); border: 1px solid var(--neutral-300);
+    cursor: pointer; text-decoration: none; font-family: var(--font); letter-spacing: var(--tracking-tight);
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .hero-ghost:hover { border-color: var(--neutral-400); background: var(--neutral-50); }
+  /* ─── SHARED SECTION TYPE ─── */
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--neutral-400);
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--black);
+    max-width: 640px;
+    margin: 0 auto 16px;
+    text-align: center;
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: var(--neutral-500);
+    max-width: none;
+    line-height: 1.6;
+    margin: 0 auto 52px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  @media (max-width: 1000px) {
+    .section-sub { white-space: normal; max-width: 540px; }
+  }
+
+  /* Accent word in a heading: upright + lime, never italic.
+     index.html defines this ~1050 lines away from .section-title — keep in sync. */
+  .section-title em, .lead-h em { font-style: normal; color: #84CC16; }
+
+  /* Safety net: no heading accent ever falls back to browser italic.
+     Colour still comes from the specific rules above / per-section. */
+  h1 em, h2 em, h3 em, h4 em { font-style: normal; }
+  /* ─── SHARED FAQ ACCORDION ─── */
+
+  .faq-inner {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    align-items: start;
+    margin-top: 52px;
+  }
+  @media (max-width: 760px) {
+    .faq-grid { grid-template-columns: 1fr; }
+  }
+
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--neutral-200);
+    border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(10,10,10,0.04);
+    transition: border-color 0.15s;
+  }
+  .faq-item[open] { border-color: var(--neutral-300); }
+
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.4;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+
+  .faq-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .faq-icon::before,
+  .faq-icon::after {
+    content: '';
+    position: absolute;
+    background: var(--neutral-500);
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .faq-icon::before { left: 0; right: 0; top: 50%; height: 2px; transform: translateY(-50%); }
+  .faq-icon::after { top: 0; bottom: 0; left: 50%; width: 2px; transform: translateX(-50%); }
+  .faq-item[open] .faq-icon::after { transform: translateX(-50%) scaleY(0); opacity: 0; }
+
+  .faq-answer {
+    padding: 0 20px 18px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--neutral-600);
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* ─── GLOBAL FOOTER (shared with index.html — keep in sync) ─── */
+  /* ─── GLOBAL FOOTER (dark, layout B) ─── */
+  .sf { background:#0F0F0F; color:rgba(255,255,255,0.7); overflow:hidden; }
+  .sf-cta { background:#A3E635; }
+  .sf-cta-inner { max-width:1180px; margin:0 auto; padding:42px 28px; display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; }
+  .sf-cta-h { font-size:28px; font-weight:600; letter-spacing:-0.02em; color:#0a0a0a; line-height:1.15; }
+  .sf-cta-s { font-size:14px; color:rgba(10,10,10,0.62); margin-top:6px; }
+  .sf-cta-btn { background:#0a0a0a; color:#fff; font-size:15px; font-weight:600; padding:13px 24px; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; white-space:nowrap; transition:transform 0.15s; font-family:var(--font); letter-spacing:var(--tracking-tight); }
+  .sf-cta-btn:hover { transform:translateY(-1px); }
+  .sf-cta-btn svg { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-inner { max-width:1180px; margin:0 auto; padding:56px 28px 0; }
+  .sf-strip { display:flex; justify-content:space-between; gap:48px; flex-wrap:wrap; padding-bottom:38px; border-bottom:0.5px solid rgba(255,255,255,0.1); }
+  .sf-brand { max-width:320px; }
+  .sf-logo { display:inline-flex; align-items:center; gap:10px; text-decoration:none; }
+  .sf-tile { width:34px; height:34px; border-radius:9px; background:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:18px; font-weight:600; letter-spacing:-1.2px; line-height:1; }
+  .sf-brandname { font-size:21px; font-weight:600; letter-spacing:-0.5px; color:#fff; }
+  .sf-tag { font-size:14px; color:rgba(255,255,255,0.5); line-height:1.55; margin:16px 0; }
+  .sf-trust { display:flex; align-items:center; gap:8px; font-size:12px; font-weight:500; color:rgba(255,255,255,0.55); margin-bottom:18px; }
+  .sf-trust svg { width:14px; height:14px; fill:none; stroke:#A3E635; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-soc { display:flex; gap:14px; }
+  .sf-soc a { color:#A3E635; transition:color 0.15s; }
+  .sf-soc a:hover { color:#BEF264; }
+  .sf-soc svg { width:19px; height:19px; fill:currentColor; }
+  .sf-nl { min-width:280px; }
+  .sf-nl-lbl { font-size:13px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:10px; }
+  .sf-nl-input { display:flex; gap:8px; max-width:340px; }
+  .sf-nl-input input { flex:1; background:rgba(255,255,255,0.06); border:0.5px solid rgba(255,255,255,0.2); border-radius:8px; padding:10px 12px; color:#fff; font-size:13px; font-family:var(--font); }
+  .sf-nl-input input::placeholder { color:rgba(255,255,255,0.4); }
+  .sf-nl-input button { background:#fff; color:#0a0a0a; border:none; border-radius:8px; padding:0 18px; font-size:13px; font-weight:600; cursor:pointer; font-family:var(--font); }
+  .sf-nl-input button:hover { opacity:0.9; }
+  .sf-contact { font-size:13px; color:rgba(255,255,255,0.5); margin-top:18px; line-height:1.7; }
+  .sf-contact a { color:rgba(255,255,255,0.72); text-decoration:none; }
+  .sf-contact a:hover { color:#fff; }
+  .sf-cols { display:grid; grid-template-columns:repeat(5,1fr); gap:24px; padding:40px 0; }
+  .sf-col h4 { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:rgba(255,255,255,0.4); margin-bottom:14px; }
+  .sf-col a { display:block; font-size:13px; color:rgba(255,255,255,0.62); text-decoration:none; padding:5px 0; transition:color 0.15s; }
+  .sf-col a:hover { color:#fff; }
+  .sf-col a.more { color:#A3E635; font-weight:500; margin-top:6px; display:inline-flex; align-items:center; gap:6px; }
+  .sf-col a.more svg { width:13px; height:13px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-trend { padding:30px 0; border-top:0.5px solid rgba(255,255,255,0.1); }
+  .sf-trend-lbl { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:rgba(255,255,255,0.4); margin-bottom:15px; }
+  .sf-pills { display:flex; flex-wrap:wrap; gap:9px; }
+  .sf-pills a { font-size:13px; color:rgba(255,255,255,0.7); border:0.5px solid rgba(255,255,255,0.18); border-radius:999px; padding:7px 15px; text-decoration:none; transition:0.15s; }
+  .sf-pills a:hover { border-color:rgba(255,255,255,0.55); color:#fff; }
+  .sf-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding:22px 0 44px; border-top:0.5px solid rgba(255,255,255,0.1); font-size:13px; color:rgba(255,255,255,0.4); }
+  .sf-bb-left { display:flex; align-items:center; gap:22px; flex-wrap:wrap; }
+  .sf-bb-legal { display:flex; gap:18px; flex-wrap:wrap; }
+  .sf-bb-legal a { color:rgba(255,255,255,0.4); text-decoration:none; }
+  .sf-bb-legal a:hover { color:#fff; }
+  .sf-bb-right { display:flex; align-items:center; gap:12px; }
+  .sf-region, .sf-totop { display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:500; color:rgba(255,255,255,0.72); background:transparent; border:0.5px solid rgba(255,255,255,0.2); border-radius:8px; padding:8px 13px; cursor:pointer; text-decoration:none; font-family:var(--font); }
+  .sf-region:hover, .sf-totop:hover { border-color:rgba(255,255,255,0.45); color:#fff; }
+  .sf-totop { font-weight:600; color:#fff; }
+  .sf-region svg, .sf-totop svg { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+  .sf-region .chev { width:11px; height:11px; }
+  @media (max-width:980px) { .sf-cols { grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:640px) { .sf-cols { grid-template-columns:repeat(2,1fr); } .sf-cta-h { font-size:23px; } }
+
+  /* ═══════════════════════════════════════════════════════════
+     COURSE DETAIL PAGE — reusable template
+     Drives all 5 course pages. Nothing per-course lives in CSS;
+     swap the markup content only.
+     Tokens, nav, footer, buttons, section type & the FAQ
+     accordion are inherited verbatim from index.html above.
+     ═══════════════════════════════════════════════════════════ */
+
+  .co-hero, .co-bar, .co-out, .co-fit, .co-curr, .co-proj,
+  .co-tools, .co-inst, .co-cert, .co-voices, .co-faq, .co-cta {
+    position: relative;
+    z-index: 1;
+  }
+  .co-out, .co-fit, .co-curr, .co-proj,
+  .co-inst, .co-cert, .co-voices { padding: 88px 32px; }
+  .co-faq { padding: 88px 32px; background: transparent; }
+  .co-cta { padding: 88px 32px 96px; background: transparent; }
+  .co-inner { max-width: 1160px; margin: 0 auto; }
+
+  /* ─── 1 · HERO ─── */
+  .co-hero { padding: calc(var(--nav-h) + 40px) 32px 52px; }
+  .co-hero-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 392px;
+    gap: 56px;
+    align-items: start;
+  }
+  .co-hero-glow {
+    position: absolute;
+    width: 520px; height: 420px;
+    top: 40px; left: -80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(163,230,53,0.3), transparent 62%);
+    filter: blur(50px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .co-crumb {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: var(--neutral-400);
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+  .co-crumb a { color: var(--neutral-500); text-decoration: none; transition: color 0.15s; }
+  .co-crumb a:hover { color: var(--black); }
+  .co-crumb svg { width: 12px; height: 12px; stroke: var(--neutral-300); fill: none; stroke-width: 2; }
+
+  .co-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #4d7c0f;
+    background: rgba(163,230,53,0.14);
+    border-radius: 100px;
+    padding: 7px 14px;
+    margin-bottom: 20px;
+  }
+  .co-eyebrow svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .co-h1 {
+    font-size: clamp(32px, 3.9vw, 50px);
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: -0.04em;
+    color: var(--black);
+  }
+  .co-h1 em { font-style: normal; color: #84CC16; }
+
+  .co-sub {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--neutral-600);
+    margin-top: 20px;
+    max-width: 560px;
+  }
+
+  .co-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 26px; }
+  .co-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--neutral-600);
+    background: var(--white);
+    border: 1px solid var(--neutral-200);
+    border-radius: 100px;
+    padding: 7px 14px;
+  }
+  .co-chip svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .co-chip.rate svg { fill: #84CC16; stroke: none; }
+  .co-chip b { color: var(--black); font-weight: 600; }
+
+  .co-hero-pts { list-style: none; margin-top: 30px; display: grid; gap: 11px; }
+  .co-hero-pts li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    font-size: 15px;
+    color: var(--neutral-600);
+    line-height: 1.5;
+  }
+  .co-hero-pts b { color: var(--black); font-weight: 600; }
+  .co-tick {
+    width: 19px; height: 19px;
+    border-radius: 50%;
+    background: rgba(163,230,53,0.2);
+    color: #4d7c0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .co-tick svg { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ─── ENROL CARD ─── */
+  .co-card {
+    position: sticky;
+    top: calc(var(--nav-h) + 20px);
+    background: var(--white);
+    border: 1px solid #ececec;
+    border-radius: 20px;
+    box-shadow: 0 10px 34px rgba(10,10,10,0.09);
+    overflow: hidden;
+  }
+  .co-card-img { aspect-ratio: 16 / 10; background: var(--neutral-100); position: relative; }
+  .co-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .co-card-tag {
+    position: absolute;
+    top: 12px; left: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #A3E635;
+    color: var(--black);
+    border-radius: 100px;
+    padding: 5px 11px;
+  }
+  .co-card-body { padding: 24px 24px 26px; }
+
+  .co-price { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .co-price-now {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--black);
+    line-height: 1;
+  }
+  .co-price-was { font-size: 17px; color: var(--neutral-400); text-decoration: line-through; }
+  .co-price-off {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4d7c0f;
+    background: rgba(163,230,53,0.18);
+    border-radius: 100px;
+    padding: 4px 10px;
+  }
+  .co-price-note { font-size: 13px; color: var(--neutral-500); margin-top: 8px; }
+
+  .co-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 15px 22px;
+    border-radius: 8px;
+    background: #0a0a0a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font);
+    letter-spacing: var(--tracking-tight);
+    margin-top: 20px;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  .co-btn:hover { opacity: 0.85; }
+  .co-btn:active { transform: scale(0.99); }
+  .co-btn svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .co-btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--neutral-300);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--font);
+    letter-spacing: var(--tracking-tight);
+    margin-top: 10px;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .co-btn-2:hover { border-color: var(--neutral-400); background: var(--neutral-50); }
+
+  .co-incl {
+    list-style: none;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid var(--neutral-200);
+    display: grid;
+    gap: 11px;
+  }
+  .co-incl li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--neutral-600);
+    line-height: 1.45;
+  }
+  .co-incl b { color: var(--black); font-weight: 600; }
+  .co-incl svg {
+    width: 15px; height: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    fill: none;
+    stroke: #4d7c0f;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .co-guar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--neutral-200);
+    font-size: 13px;
+    color: var(--neutral-500);
+    line-height: 1.45;
+  }
+  .co-guar svg { width: 17px; height: 17px; flex-shrink: 0; fill: none; stroke: var(--neutral-400); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .co-guar b { color: var(--black); font-weight: 600; }
+
+  /* ─── 2 · STICKY SUB-NAV ─── */
+  .co-bar {
+    position: sticky;
+    top: var(--nav-h);
+    z-index: 90;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--neutral-200);
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  .co-bar-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .co-bar-links { display: flex; gap: 24px; list-style: none; flex: 1; }
+  .co-bar-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutral-500);
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+  }
+  .co-bar-links a:hover { color: var(--black); border-bottom-color: #A3E635; }
+  .co-bar-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .co-bar-price { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; color: var(--black); }
+  .co-bar-price s { color: var(--neutral-400); font-weight: 400; font-size: 13px; margin-left: 5px; }
+  .co-bar-btn {
+    padding: 9px 20px;
+    border-radius: 8px;
+    background: #0a0a0a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: var(--tracking-tight);
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+  .co-bar-btn:hover { opacity: 0.85; }
+
+  /* ─── 3 · OUTCOMES ─── */
+  .co-out-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .co-o {
+    background: var(--white);
+    border: 1px solid #ececec;
+    border-radius: 18px;
+    padding: 28px 26px;
+    box-shadow: 0 4px 16px rgba(10,10,10,0.05);
+  }
+  .co-o-ic {
+    width: 46px; height: 46px;
+    border-radius: 13px;
+    background: rgba(163,230,53,0.14);
+    color: #4d7c0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .co-o-ic svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .co-o-t { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; line-height: 1.3; }
+  .co-o-d { font-size: 14px; color: var(--neutral-500); line-height: 1.55; }
+
+  /* ─── 4 · FIT / NOT FIT ─── */
+  .co-fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .co-fit-c { border-radius: 20px; padding: 36px 34px; }
+  .co-fit-c.yes {
+    background: var(--white);
+    border: 1px solid #ececec;
+    border-top: 3px solid #A3E635;
+    box-shadow: 0 4px 16px rgba(10,10,10,0.05);
+  }
+  .co-fit-c.no {
+    background: var(--neutral-50);
+    border: 1px solid var(--neutral-200);
+    border-top: 3px solid var(--neutral-300);
+  }
+  .co-fit-h { font-size: 19px; font-weight: 600; letter-spacing: -0.025em; margin-bottom: 20px; }
+  .co-fit-l { list-style: none; display: grid; gap: 13px; }
+  .co-fit-l li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--neutral-600);
+    line-height: 1.5;
+  }
+  .co-fit-l svg { width: 17px; height: 17px; flex-shrink: 0; margin-top: 2px; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .co-fit-c.yes svg { stroke: #4d7c0f; }
+  .co-fit-c.no svg { stroke: var(--neutral-400); }
+
+  /* ─── 5 · CURRICULUM ─── */
+  .co-curr-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .co-curr-h { font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; }
+  .co-curr-h em { font-style: normal; color: #84CC16; }
+  .co-curr-sum { font-size: 14px; color: var(--neutral-500); }
+  .co-curr-sum b { color: var(--black); font-weight: 600; }
+  .co-mods { display: grid; gap: 10px; }
+  .co-mod {
+    background: var(--white);
+    border: 1px solid var(--neutral-200);
+    border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(10,10,10,0.04);
+    transition: border-color 0.15s;
+  }
+  .co-mod[open] { border-color: var(--neutral-300); }
+  .co-mod summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .co-mod summary::-webkit-details-marker { display: none; }
+  .co-mod-n {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #4d7c0f;
+    background: rgba(163,230,53,0.14);
+    border-radius: 6px;
+    padding: 5px 9px;
+    flex-shrink: 0;
+  }
+  .co-mod-t { font-size: 16px; font-weight: 600; letter-spacing: -0.02em; flex: 1; line-height: 1.35; }
+  .co-mod-meta { font-size: 13px; color: var(--neutral-400); flex-shrink: 0; white-space: nowrap; }
+  .co-mod-body { padding: 0 22px 20px 22px; }
+  .co-mod-d { font-size: 14px; color: var(--neutral-600); line-height: 1.6; margin-bottom: 16px; }
+  .co-les { list-style: none; display: grid; gap: 9px; border-top: 1px solid var(--neutral-200); padding-top: 16px; }
+  .co-les li { display: flex; align-items: center; gap: 11px; font-size: 14px; color: var(--neutral-600); }
+  .co-les svg { width: 14px; height: 14px; flex-shrink: 0; fill: none; stroke: var(--neutral-300); stroke-width: 1.8; }
+  .co-les .free {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #4d7c0f;
+    background: rgba(163,230,53,0.16);
+    border-radius: 100px;
+    padding: 2px 8px;
+    margin-left: auto;
+  }
+
+  /* ─── 6 · PROJECTS ─── */
+  .co-proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: center; }
+  .co-proj-img { aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden; background: var(--neutral-200); }
+  .co-proj-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .co-proj-h { font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 16px; }
+  .co-proj-h em { font-style: normal; color: #84CC16; }
+  .co-proj-d { font-size: 16px; line-height: 1.65; color: var(--neutral-600); }
+  .co-proj-d b { color: var(--black); font-weight: 600; }
+  .co-proj-l { list-style: none; display: grid; gap: 10px; margin-top: 26px; }
+  .co-proj-l li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--white);
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    padding: 15px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: -0.01em;
+  }
+  .co-proj-l .n { font-size: 12px; font-weight: 600; color: #84CC16; flex-shrink: 0; }
+
+  /* ─── 7 · TOOLS ─── */
+  .co-tools { padding: 0 32px 88px; }
+  .co-tools-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    background: var(--neutral-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: 20px;
+    padding: 40px 44px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .co-tools-l { flex-shrink: 0; }
+  .co-tools-t { font-size: 18px; font-weight: 600; letter-spacing: -0.025em; margin-bottom: 6px; }
+  .co-tools-d { font-size: 14px; color: var(--neutral-500); line-height: 1.5; max-width: 280px; }
+  .co-tools-row { display: flex; gap: 10px; flex-wrap: wrap; flex: 1; }
+  .co-tool {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--white);
+    border: 1px solid var(--neutral-200);
+    border-radius: 10px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutral-800);
+    letter-spacing: -0.01em;
+  }
+  .co-tool i { width: 7px; height: 7px; border-radius: 50%; background: #A3E635; flex-shrink: 0; }
+
+  /* ─── 8 · INSTRUCTOR ─── */
+  .co-inst-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    background: var(--black);
+    border-radius: 24px;
+    padding: 52px 48px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .co-inst-glow {
+    position: absolute;
+    width: 460px; height: 460px;
+    top: -240px; left: -100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(163,230,53,0.26), transparent 62%);
+    filter: blur(46px);
+    pointer-events: none;
+  }
+  .co-inst-inner > * { position: relative; z-index: 1; }
+  .co-inst-av {
+    width: 240px; height: 240px;
+    border-radius: 20px;
+    background: rgba(163,230,53,0.14);
+    color: #A3E635;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    overflow: hidden;
+  }
+  .co-inst-av img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .co-inst-l {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 16px;
+  }
+  .co-inst-n { font-size: 28px; font-weight: 600; letter-spacing: -0.03em; color: #fff; }
+  .co-inst-r { font-size: 15px; font-weight: 500; color: #A3E635; margin-top: 6px; }
+  .co-inst-b { font-size: 15.5px; color: rgba(255,255,255,0.62); line-height: 1.65; margin-top: 18px; max-width: 620px; }
+  .co-inst-cred { display: flex; gap: 32px; margin-top: 26px; flex-wrap: wrap; }
+  .co-inst-cred div span { display: block; font-size: 22px; font-weight: 600; letter-spacing: -0.03em; color: #fff; }
+  .co-inst-cred div small { font-size: 12.5px; color: rgba(255,255,255,0.45); margin-top: 3px; display: block; }
+
+  /* ─── 9 · CERTIFICATE ─── */
+  .co-cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .co-cert-img { aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden; background: var(--neutral-100); border: 1px solid var(--neutral-200); }
+  .co-cert-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .co-cert-h { font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 16px; }
+  .co-cert-h em { font-style: normal; color: #84CC16; }
+  .co-cert-d { font-size: 16px; line-height: 1.65; color: var(--neutral-600); }
+  .co-cert-l { list-style: none; display: grid; gap: 12px; margin-top: 24px; }
+  .co-cert-l li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--neutral-600); line-height: 1.5; }
+  .co-cert-l svg { width: 17px; height: 17px; flex-shrink: 0; margin-top: 2px; fill: none; stroke: #4d7c0f; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ─── 10 · VOICES ─── */
+  .co-voices-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .co-v {
+    background: var(--white);
+    border: 1px solid #ececec;
+    border-top: 3px solid #A3E635;
+    border-radius: 18px;
+    padding: 28px 26px 24px;
+    box-shadow: 0 4px 16px rgba(10,10,10,0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  .co-v-stars { display: inline-flex; gap: 2px; margin-bottom: 16px; }
+  .co-v-stars svg { width: 14px; height: 14px; fill: #84CC16; }
+  .co-v-q { font-size: 15px; line-height: 1.6; color: var(--neutral-800); letter-spacing: -0.01em; flex: 1; }
+  .co-v-w { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--neutral-200); display: flex; align-items: center; gap: 11px; }
+  .co-v-av {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--neutral-100);
+    color: var(--neutral-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12.5px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .co-v-n { font-size: 13.5px; font-weight: 600; letter-spacing: -0.01em; }
+  .co-v-r { font-size: 12px; color: var(--neutral-400); margin-top: 2px; }
+
+  /* ─── 12 · FINAL CTA ─── */
+  .co-cta-inner {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+    background: var(--black);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 60px 48px;
+    text-align: center;
+  }
+  .co-cta-glow {
+    position: absolute;
+    width: 560px; height: 560px;
+    bottom: -330px; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(163,230,53,0.3), transparent 62%);
+    filter: blur(48px);
+    pointer-events: none;
+  }
+  .co-cta-inner > * { position: relative; z-index: 1; }
+  .co-cta-t {
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 680px;
+    margin: 0 auto 16px;
+  }
+  .co-cta-t em { font-style: normal; color: #A3E635; }
+  .co-cta-s { font-size: 16px; color: rgba(255,255,255,0.62); line-height: 1.6; max-width: 520px; margin: 0 auto 26px; }
+  .co-cta-price { display: inline-flex; align-items: baseline; gap: 10px; margin-bottom: 22px; }
+  .co-cta-price b { font-size: 32px; font-weight: 600; letter-spacing: -0.04em; color: #fff; }
+  .co-cta-price s { font-size: 16px; color: rgba(255,255,255,0.35); }
+  .co-cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .co-lime {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    background: #A3E635;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: var(--tracking-tight);
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  .co-lime:hover { opacity: 0.88; }
+  .co-lime:active { transform: scale(0.98); }
+  .co-ghost-d {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.22);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: var(--tracking-tight);
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .co-ghost-d:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.06); }
+  .co-cta-guar { font-size: 13px; color: rgba(255,255,255,0.4); margin-top: 22px; }
+
+  /* ─── 13 · MOBILE STICKY BUY BAR ─── */
+  .co-mobile {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 95;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--neutral-200);
+    transform: translateY(110%);
+    transition: transform 0.25s ease;
+  }
+  .co-mobile.show { transform: translateY(0); }
+  .co-mobile-p { font-size: 17px; font-weight: 600; letter-spacing: -0.03em; color: var(--black); }
+  .co-mobile-p s { font-size: 13px; color: var(--neutral-400); font-weight: 400; margin-left: 6px; }
+  .co-mobile-p small { display: block; font-size: 11.5px; color: var(--neutral-500); font-weight: 400; margin-top: 1px; letter-spacing: 0; }
+  .co-mobile-b {
+    padding: 12px 26px;
+    border-radius: 8px;
+    background: #0a0a0a;
+    color: #fff;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: var(--tracking-tight);
+    white-space: nowrap;
+  }
+
+  /* long subs on this page must wrap — index.html's default is nowrap */
+  .co-out .section-sub,
+  .co-fit .section-sub,
+  .co-voices .section-sub { white-space: normal; max-width: 640px; }
+  .co-eyebrow-c { text-align: center; }
+  .co-out .section-title,
+  .co-fit .section-title,
+  .co-voices .section-title,
+  .co-faq .section-title { max-width: none; }
+
+  /* Inter loads 300-600 only — never let the browser synthesize 700 */
+  .co-v-q b, .co-mod-d b, .co-o-d b { font-weight: 600; }
+
+  /* ═══════════ RESPONSIVE ═══════════ */
+  @media (max-width: 1080px) {
+    .co-hero-inner { grid-template-columns: 1fr 350px; gap: 40px; }
+    .co-inst-inner { grid-template-columns: 180px 1fr; gap: 36px; padding: 44px 36px; }
+    .co-inst-av { width: 180px; height: 180px; font-size: 48px; }
+  }
+  @media (max-width: 940px) {
+    .co-hero-inner { grid-template-columns: 1fr; gap: 36px; }
+    .co-card { position: static; max-width: 480px; }
+    .co-sub { max-width: none; }
+    .co-out-grid { grid-template-columns: 1fr 1fr; }
+    .co-proj-grid, .co-cert-grid { grid-template-columns: 1fr; gap: 34px; }
+    .co-proj-img, .co-cert-img { max-width: 520px; }
+    .co-voices-grid { grid-template-columns: 1fr; }
+    .co-bar-links { gap: 18px; overflow-x: auto; scrollbar-width: none; }
+    .co-bar-links::-webkit-scrollbar { display: none; }
+  }
+  @media (max-width: 820px) {
+    .co-fit-grid { grid-template-columns: 1fr; }
+    .co-inst-inner { grid-template-columns: 1fr; padding: 40px 28px; }
+    .co-inst-av { width: 120px; height: 120px; font-size: 34px; border-radius: 18px; }
+  }
+  @media (max-width: 760px) {
+    body { padding-bottom: 74px; }
+    .co-mobile { display: flex; }
+    .co-hero { padding: calc(var(--nav-h) + 28px) 16px 40px; }
+    .co-out, .co-fit, .co-curr, .co-proj, .co-inst,
+    .co-cert, .co-voices, .co-faq { padding: 60px 16px; }
+    .co-tools { padding: 0 16px 60px; }
+    .co-cta { padding: 60px 16px 72px; }
+    .co-bar-inner { padding: 0 16px; height: 54px; }
+    .co-bar-price { display: none; }
+    .co-tools-inner, .co-fit-c { padding: 28px 22px; }
+    .co-cta-inner { padding: 44px 22px; border-radius: 20px; }
+    .co-inst-inner { border-radius: 20px; }
+    .co-card-body { padding: 20px 20px 22px; }
+  }
+  @media (max-width: 620px) {
+    .co-out-grid { grid-template-columns: 1fr; }
+    .co-mod summary { gap: 12px; padding: 16px; flex-wrap: wrap; }
+    .co-mod-t { flex-basis: 100%; order: 3; }
+    .co-mod-body { padding: 0 16px 18px; }
+    .co-curr-head { align-items: flex-start; }
+    .co-inst-cred { gap: 22px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .co-mobile { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── GLOBAL GRID — brand signature lattice behind the whole page ─── -->
+<div class="page-grid"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo">
+                  <!-- edBuddy Pro lockup -->
+      <svg width="188" height="34" viewBox="0 0 244 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="edBuddy Pro">
+        <rect x="2" y="2" width="40" height="40" rx="10" fill="#0A0A0A"/>
+        <text x="22" y="30" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="600" letter-spacing="-1.2"><tspan fill="#FFFFFF">e</tspan><tspan fill="#A3E635">b</tspan></text>
+        <text x="54" y="32" font-family="Inter, -apple-system, sans-serif" font-size="29" letter-spacing="-0.8"><tspan fill="#8A8A8A" font-weight="300">ed</tspan><tspan fill="#0A0A0A" font-weight="600">Buddy</tspan></text>
+        <line x1="194" y1="13" x2="194" y2="31" stroke="#D4D4D4" stroke-width="1"/>
+        <text x="203" y="31" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#A3A3A3">Pro</text>
+      </svg>
+    </a>
+
+    <!-- Center nav links -->
+    <ul class="nav-links">
+      <!-- Courses dropdown -->
+      <li class="nav-dropdown-wrapper">
+        <button class="nav-dropdown-trigger" onclick="this.closest('.nav-dropdown-wrapper').classList.toggle('open')">
+          Courses
+          <svg class="chevron" viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg>
+        </button>
+        <div class="mega-menu">
+          <div class="mega-menu-header">
+            <span>All Courses</span>
+            <a href="#">View all →</a>
+          </div>
+          <!-- Course items -->
+          <a href="ai-for-hr.html" class="course-item" aria-current="page">
+            <div class="course-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="course-item-text">
+              <span class="course-item-title">AI for HR Professionals</span>
+              <span class="course-item-sub">Automate recruiting, onboarding & analytics</span>
+            </div>
+          </a>
+          <a href="#" class="course-item">
+            <div class="course-icon">
+              <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="course-item-text">
+              <span class="course-item-title">AI for Finance</span>
+              <span class="course-item-sub">Forecasting, reporting & risk with AI</span>
+            </div>
+          </a>
+          <a href="#" class="course-item">
+            <div class="course-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <div class="course-item-text">
+              <span class="course-item-title">AI for Product Management</span>
+              <span class="course-item-sub">Roadmaps, research & prioritisation</span>
+            </div>
+          </a>
+          <a href="#" class="course-item">
+            <div class="course-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="course-item-text">
+              <span class="course-item-title">Claude & ChatGPT Combo<span class="course-badge">Hot</span></span>
+              <span class="course-item-sub">Master both tools for maximum output</span>
+            </div>
+          </a>
+          <a href="#" class="course-item">
+            <div class="course-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="course-item-text">
+              <span class="course-item-title">Co-Pilot for Everyday Use</span>
+              <span class="course-item-sub">Emails, docs, meetings — all with AI</span>
+            </div>
+          </a>
+          <a href="#" class="course-item">
+            <div class="course-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="course-item-text">
+              <span class="course-item-title">More coming soon<span class="course-badge">New</span></span>
+              <span class="course-item-sub">AI for Sales, Marketing & Operations</span>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" placeholder="Search resources…" aria-label="Search resources">
+      </li>
+      <li class="nav-secondary">
+        <a href="#">For Business</a>
+        <a href="#">Blogs</a>
+        <a href="about.html">About Us</a>
+      </li>
+    </ul>
+
+    <!-- Right CTAs -->
+    <div class="nav-right">
+      <a href="#" class="btn-primary">Login</a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"
+      onclick="var n=document.getElementById('navbar');n.classList.toggle('menu-open');this.setAttribute('aria-expanded',n.classList.contains('menu-open'));this.setAttribute('aria-label',n.classList.contains('menu-open')?'Close menu':'Open menu');">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile slide-down menu -->
+  <div class="nav-mobile">
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Courses</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">For Business</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">Blogs</a>
+    <a href="#" class="nm-link" onclick="document.getElementById('navbar').classList.remove('menu-open')">About Us</a>
+    <div class="nm-actions">
+      <a href="#" class="btn-primary nm-btn">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── 1 · HERO ─── -->
+<section class="co-hero">
+  <span class="co-hero-glow"></span>
+  <div class="co-hero-inner">
+
+    <div class="co-hero-copy">
+      <nav class="co-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 16 16"><polyline points="6 3 11 8 6 13"/></svg>
+        <a href="index.html#courses">Courses</a>
+        <svg viewBox="0 0 16 16"><polyline points="6 3 11 8 6 13"/></svg>
+        <span aria-current="page">AI for HR Professionals</span>
+      </nav>
+
+      <span class="co-eyebrow">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        For HR teams
+      </span>
+
+      <h1 class="co-h1">AI for HR <em>Professionals</em></h1>
+      <p class="co-sub">Use AI to transform hiring, automate onboarding and generate policy documents in minutes — without touching a line of code.</p>
+
+      <div class="co-meta">
+        <span class="co-chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6 hours</span>
+        <span class="co-chip"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>Self-paced</span>
+        <span class="co-chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>Certificate</span>
+        <span class="co-chip"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>No code needed</span>
+        <span class="co-chip rate"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><b>4.8</b>&nbsp;(312 ratings)</span>
+      </div>
+
+      <ul class="co-hero-pts">
+        <li><span class="co-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Built from <b>20+ interviews</b> with working HR professionals — not from a generic AI syllabus</span></li>
+        <li><span class="co-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>5 hands-on projects</b> using real artefacts — a live JD, a CV screening rubric, a 30/60/90 plan</span></li>
+        <li><span class="co-tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Covers <b>what you must never paste in</b> — privacy, DPDP and where AI has no business deciding</span></li>
+      </ul>
+    </div>
+
+    <aside class="co-card">
+      <div class="co-card-img">
+        <img src="images/cert-hr.webp" alt="AI for HR Professionals course" width="392" height="245" loading="eager">
+        <span class="co-card-tag">Most popular</span>
+      </div>
+      <div class="co-card-body">
+        <div class="co-price">
+          <span class="co-price-now">&#8377;4,999</span>
+          <span class="co-price-was">&#8377;7,999</span>
+          <span class="co-price-off">Save 38%</span>
+        </div>
+        <p class="co-price-note">One-time payment · lifetime access · GST included</p>
+
+        <a href="#enrol" class="co-btn">Enrol now
+          <svg viewBox="0 0 16 16"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+        </a>
+        <a href="#curriculum" class="co-btn-2">Preview 3 lessons free</a>
+
+        <ul class="co-incl">
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>6 hours</b> of lessons across 6 modules</span></li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>28 lessons</b>, all self-paced</span></li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>5 hands-on projects</b> you keep and reuse</span></li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>40+ HR prompt library</b>, copy-paste ready</span></li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Shareable certificate</b> on completion</span></li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Lifetime access</b> + free updates as tools change</span></li>
+        </ul>
+
+        <div class="co-guar">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span><b>7-day refund.</b> If it isn't right, email support — no questions asked.</span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+
+<!-- ─── 2 · STICKY SUB-NAV ─── -->
+<div class="co-bar">
+  <div class="co-bar-inner">
+    <ul class="co-bar-links">
+      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#fit">Who it's for</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#instructor">Instructor</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="co-bar-right">
+      <span class="co-bar-price">&#8377;4,999<s>&#8377;7,999</s></span>
+      <a href="#enrol" class="co-bar-btn">Enrol now</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ─── 3 · OUTCOMES ─── -->
+<section class="co-out" id="outcomes">
+  <div class="co-inner">
+    <div class="section-eyebrow co-eyebrow-c">What you'll be able to do</div>
+    <h2 class="section-title">Six things you can't do <em>today</em></h2>
+    <p class="section-sub">Not "understand AI". Specific tasks, on your own work, by the end of the course.</p>
+
+    <div class="co-out-grid">
+
+      <div class="co-o">
+        <div class="co-o-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <div class="co-o-t">Write a job description in 8 minutes</div>
+        <div class="co-o-d">One that reads like your company wrote it — not like every other JD on the job board.</div>
+      </div>
+
+      <div class="co-o">
+        <div class="co-o-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div class="co-o-t">Screen 200 CVs against your own rubric</div>
+        <div class="co-o-d">Define the criteria yourself, apply them consistently, and be able to defend every single rejection.</div>
+      </div>
+
+      <div class="co-o">
+        <div class="co-o-ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="co-o-t">Build interview guides that predict</div>
+        <div class="co-o-d">Structured questions and scorecards tied to the role — with the bias checks built in.</div>
+      </div>
+
+      <div class="co-o">
+        <div class="co-o-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="co-o-t">Draft onboarding built for the role</div>
+        <div class="co-o-d">A real 30/60/90 shaped around the job, not the same template with the title swapped.</div>
+      </div>
+
+      <div class="co-o">
+        <div class="co-o-ic"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <div class="co-o-t">Turn a messy survey into a board summary</div>
+        <div class="co-o-d">400 free-text responses to three themes and a recommendation leadership will actually read.</div>
+      </div>
+
+      <div class="co-o">
+        <div class="co-o-ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="co-o-t">Know exactly where to stop</div>
+        <div class="co-o-d">Which data never goes near a chatbot, and which decisions must stay with a human. Every time.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 4 · FIT / NOT FIT ─── -->
+<section class="co-fit" id="fit">
+  <div class="co-inner">
+    <div class="section-eyebrow co-eyebrow-c">Honest fit check</div>
+    <h2 class="section-title">Who this is for — <em>and who it isn't</em></h2>
+    <p class="section-sub">We'd rather you skip it than finish it disappointed.</p>
+
+    <div class="co-fit-grid">
+
+      <div class="co-fit-c yes">
+        <div class="co-fit-h">This is built for you if…</div>
+        <ul class="co-fit-l">
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>You're an HR generalist, HRBP, recruiter, People Ops or HR lead</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>You've tried ChatGPT, got generic output, and quietly gave up</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>You have real work sitting on your desk you'd rather do faster</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>You have zero technical background and no intention of getting one</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>You need to answer "is this even allowed?" before you roll anything out</li>
+        </ul>
+      </div>
+
+      <div class="co-fit-c no">
+        <div class="co-fit-h">Look elsewhere if…</div>
+        <ul class="co-fit-l">
+          <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>You want to build HR software — this is not an engineering course</li>
+          <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>You're after an AI certification as a credential in itself</li>
+          <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>You need formal employment-law or compliance training</li>
+          <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>You want the theory of how language models work under the hood</li>
+          <li><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>You're hoping to hand your judgement over to a machine entirely</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 5 · CURRICULUM ─── -->
+<section class="co-curr" id="curriculum">
+  <div class="co-inner">
+    <div class="co-curr-head">
+      <div>
+        <div class="section-eyebrow">Curriculum</div>
+        <h2 class="co-curr-h">Six modules, <em>28 lessons</em></h2>
+      </div>
+      <p class="co-curr-sum"><b>6 hours</b> total · <b>5 projects</b> · 3 lessons free to preview</p>
+    </div>
+
+    <div class="co-mods">
+
+      <details class="co-mod" open>
+        <summary>
+          <span class="co-mod-n">01</span>
+          <span class="co-mod-t">Foundations for HR</span>
+          <span class="co-mod-meta">5 lessons · 45 min</span>
+        </summary>
+        <div class="co-mod-body">
+          <p class="co-mod-d">What these tools actually do, where they reliably fail, and the data that must never leave your building. We start here because every HR use of AI runs into this wall eventually — better on lesson one than after an incident.</p>
+          <ul class="co-les">
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>What an LLM is, in HR terms<span class="free">Free</span></li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Where it fails, and how to spot it<span class="free">Free</span></li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>The data you must never paste in</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Anatomy of a prompt that works</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Setting up your workspace</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="co-mod">
+        <summary>
+          <span class="co-mod-n">02</span>
+          <span class="co-mod-t">Recruiting &amp; sourcing</span>
+          <span class="co-mod-meta">6 lessons · 70 min</span>
+        </summary>
+        <div class="co-mod-body">
+          <p class="co-mod-d">From an empty page to a shortlist. Job descriptions that sound like you, boolean strings that surface people your ATS misses, outreach that gets replies, and CV screening at volume without losing the thread.</p>
+          <ul class="co-les">
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Job descriptions in 8 minutes<span class="free">Free</span></li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Boolean strings and sourcing</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Outreach that doesn't read as spam</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Building a screening rubric</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Screening 200 CVs consistently</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg><b>Project:</b> your live JD + rubric</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="co-mod">
+        <summary>
+          <span class="co-mod-n">03</span>
+          <span class="co-mod-t">Interviewing &amp; assessment</span>
+          <span class="co-mod-meta">5 lessons · 60 min</span>
+        </summary>
+        <div class="co-mod-body">
+          <p class="co-mod-d">Structured interviews beat gut feel, and AI makes structure cheap. Build guides tied to the actual role, scorecards your panel will use, and bias checks that catch what you didn't notice you'd written.</p>
+          <ul class="co-les">
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Interview guides from the JD</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Questions that predict performance</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Scorecards a panel will actually fill in</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Running a bias check on your own wording</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg><b>Project:</b> a structured interview guide</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="co-mod">
+        <summary>
+          <span class="co-mod-n">04</span>
+          <span class="co-mod-t">Onboarding &amp; enablement</span>
+          <span class="co-mod-meta">4 lessons · 55 min</span>
+        </summary>
+        <div class="co-mod-body">
+          <p class="co-mod-d">The template-with-the-title-swapped problem, solved. Role-specific onboarding plans, 30/60/90s that mean something, and internal documentation that stops being three years out of date.</p>
+          <ul class="co-les">
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Onboarding plans built for the role</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>30/60/90s with real milestones</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Policy docs and internal wikis</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg><b>Project:</b> a 30/60/90 for a live hire</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="co-mod">
+        <summary>
+          <span class="co-mod-n">05</span>
+          <span class="co-mod-t">People analytics without a data team</span>
+          <span class="co-mod-meta">5 lessons · 75 min</span>
+        </summary>
+        <div class="co-mod-body">
+          <p class="co-mod-d">The module people tell us changed the most. Turn free-text survey responses into themes, spot attrition signals in data you already have, and write the summary that gets leadership to act rather than nod.</p>
+          <ul class="co-les">
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Coding 400 free-text responses</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Finding themes you can defend</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Attrition signals in your own data</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Writing the board-ready summary</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg><b>Project:</b> an engagement survey readout</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="co-mod">
+        <summary>
+          <span class="co-mod-n">06</span>
+          <span class="co-mod-t">Policy, privacy &amp; the limits</span>
+          <span class="co-mod-meta">3 lessons · 45 min</span>
+        </summary>
+        <div class="co-mod-body">
+          <p class="co-mod-d">Where AI has no business deciding, and how to say so with evidence. DPDP and GDPR basics for HR, a usable internal AI policy, and the decisions that stay human — with a defensible reason why.</p>
+          <ul class="co-les">
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>DPDP &amp; GDPR basics for HR</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Writing an internal AI policy</li>
+            <li><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg><b>Project:</b> your team's AI ground rules</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 6 · PROJECTS ─── -->
+<section class="co-proj" id="projects">
+  <div class="co-inner">
+    <div class="co-proj-grid">
+
+      <div>
+        <div class="section-eyebrow">The work you'll produce</div>
+        <h2 class="co-proj-h">You finish holding <em>five real things</em></h2>
+        <p class="co-proj-d">Every project uses an artefact you'd actually produce at work — <b>bring your own live role, your own survey, your own data.</b> Nothing here is a toy exercise with a made-up company. You leave with five deliverables you can use on Monday and reuse every quarter after that.</p>
+        <ul class="co-proj-l">
+          <li><span class="n">01</span>A job description for a role you're hiring right now</li>
+          <li><span class="n">02</span>A CV screening rubric, applied across 50 real CVs</li>
+          <li><span class="n">03</span>A structured interview guide with scorecard</li>
+          <li><span class="n">04</span>A 30/60/90 onboarding plan for a live hire</li>
+          <li><span class="n">05</span>An engagement survey readout for leadership</li>
+        </ul>
+      </div>
+
+      <div class="co-proj-img">
+        <img src="images/role-hr.webp" alt="HR professionals applying AI to real work" width="520" height="390" loading="lazy">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 7 · TOOLS ─── -->
+<section class="co-tools">
+  <div class="co-tools-inner">
+    <div class="co-tools-l">
+      <div class="co-tools-t">Tools you'll use</div>
+      <p class="co-tools-d">Free tiers cover everything in the course. No subscription required, no licence to buy.</p>
+    </div>
+    <div class="co-tools-row">
+      <span class="co-tool"><i></i>ChatGPT</span>
+      <span class="co-tool"><i></i>Claude</span>
+      <span class="co-tool"><i></i>Microsoft Copilot</span>
+      <span class="co-tool"><i></i>Gemini</span>
+      <span class="co-tool"><i></i>Excel / Google Sheets</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 8 · INSTRUCTOR ─── -->
+<section class="co-inst" id="instructor">
+  <div class="co-inst-inner">
+    <span class="co-inst-glow"></span>
+    <div class="co-inst-av">AA</div>
+    <div>
+      <div class="co-inst-l">Your instructor</div>
+      <div class="co-inst-n">Instructor name</div>
+      <div class="co-inst-r">Lead Instructor · HR</div>
+      <p class="co-inst-b">Placeholder bio — two or three lines covering the HR roles they've actually held, the size of team they ran, and why they're the person teaching this rather than someone who read about it. Credibility markers below are placeholders too.</p>
+      <div class="co-inst-cred">
+        <div><span>12 yrs</span><small>in HR &amp; talent</small></div>
+        <div><span>1,900+</span><small>learners taught</small></div>
+        <div><span>4.9</span><small>instructor rating</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 9 · CERTIFICATE ─── -->
+<section class="co-cert">
+  <div class="co-inner">
+    <div class="co-cert-grid">
+
+      <div class="co-cert-img">
+        <img src="images/compete-visual.webp" alt="edBuddy Pro certificate of completion" width="520" height="390" loading="lazy">
+      </div>
+
+      <div>
+        <div class="section-eyebrow">On completion</div>
+        <h2 class="co-cert-h">A certificate that <em>points at the work</em></h2>
+        <p class="co-cert-d">Finish all six modules and the five projects, and you get a shareable certificate with a public verification link. It isn't a university credential and we won't pretend otherwise — its value is that anyone can click through and see exactly what you built.</p>
+        <ul class="co-cert-l">
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Add it to your LinkedIn profile in one click</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Public verification link — anyone can confirm it</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lists the modules covered and projects completed</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>No expiry, no renewal fee, no annual membership</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 10 · VOICES ─── -->
+<section class="co-voices">
+  <div class="co-inner">
+    <div class="section-eyebrow co-eyebrow-c">From HR teams</div>
+    <h2 class="section-title">What actually <em>changed</em></h2>
+    <p class="section-sub">Not "great course" — what they could do on Monday that they couldn't on Friday.</p>
+
+    <div class="co-voices-grid">
+
+      <div class="co-v">
+        <span class="co-v-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <p class="co-v-q">Placeholder testimonial — replace with a real quote naming the specific HR task that got faster, and by how much.</p>
+        <div class="co-v-w">
+          <div class="co-v-av">AB</div>
+          <div><div class="co-v-n">Learner name</div><div class="co-v-r">HR Business Partner · Company</div></div>
+        </div>
+      </div>
+
+      <div class="co-v">
+        <span class="co-v-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <p class="co-v-q">Placeholder testimonial — replace with a real quote naming the specific HR task that got faster, and by how much.</p>
+        <div class="co-v-w">
+          <div class="co-v-av">CD</div>
+          <div><div class="co-v-n">Learner name</div><div class="co-v-r">Talent Acquisition Lead · Company</div></div>
+        </div>
+      </div>
+
+      <div class="co-v">
+        <span class="co-v-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <p class="co-v-q">Placeholder testimonial — replace with a real quote naming the specific HR task that got faster, and by how much.</p>
+        <div class="co-v-w">
+          <div class="co-v-av">EF</div>
+          <div><div class="co-v-n">Learner name</div><div class="co-v-r">Head of People · Company</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 11 · FAQ ─── -->
+<section class="co-faq" id="faq">
+  <div class="faq-inner">
+    <div class="section-eyebrow co-eyebrow-c">Before you enrol</div>
+    <h2 class="section-title">Questions we <em>actually get</em></h2>
+
+    <div class="faq-grid">
+
+      <details class="faq-item">
+        <summary>Do I need any technical background?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">None. If you can use email and a spreadsheet, you can do this course. There is no code anywhere in it, and no point where you're asked to install something complicated.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I use this on real employee data?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">Some of it, carefully — and Module 01 is largely about drawing that line before you cross it. We cover exactly what should never be pasted into a public tool, how to anonymise what can be, and which decisions must stay with a human regardless.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which AI tool do I need to pay for?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">None. Free tiers of ChatGPT, Claude, Copilot or Gemini cover every lesson and every project. We teach the approach, not one vendor — so it still works when your company standardises on a different tool.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How long do I have access?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">Lifetime, including every future update. When a tool's interface changes we re-shoot the affected lessons, and you get the new version at no extra cost.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is the certificate recognised?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">It's an edBuddy Pro certificate, not a university or professional-body credential — we won't oversell it. What it does carry is a public verification link showing the modules you covered and the projects you completed, which is what most hiring managers actually look at.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What if the course isn't right for me?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">Email support within 7 days of purchase for a full refund — no questions asked. You can also preview three lessons free before you pay anything at all.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can my whole HR team enrol together?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">Yes. Team plans include a shared dashboard and progress tracking across everyone enrolled. Get in touch through the For Business page and we'll set it up.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How long will it take me to finish?<span class="faq-icon"></span></summary>
+        <div class="faq-answer">Six hours of lessons, but plan for eight to ten with the projects — they use your own live work, which is the point. Most people spread it across two or three weeks. 92% of people who start our courses finish them.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 12 · FINAL CTA ─── -->
+<section class="co-cta" id="enrol">
+  <div class="co-cta-inner">
+    <span class="co-cta-glow"></span>
+    <h2 class="co-cta-t">The JD on your desk isn't going to <em>write itself.</em></h2>
+    <p class="co-cta-s">Six hours, five projects you keep, and a 7-day refund if it isn't what you needed.</p>
+    <div class="co-cta-price">
+      <b>&#8377;4,999</b>
+      <s>&#8377;7,999</s>
+    </div>
+    <div class="co-cta-btns">
+      <a href="#" class="co-lime">Enrol now
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg>
+      </a>
+      <a href="#curriculum" class="co-ghost-d">Preview 3 lessons free</a>
+    </div>
+    <p class="co-cta-guar">One-time payment · lifetime access · 7-day refund, no questions asked</p>
+  </div>
+</section>
+
+
+<!-- ─── 13 · MOBILE STICKY BUY BAR ─── -->
+<div class="co-mobile" id="co-mobile">
+  <div class="co-mobile-p">&#8377;4,999<s>&#8377;7,999</s><small>7-day refund</small></div>
+  <a href="#enrol" class="co-mobile-b">Enrol now</a>
+</div>
+
+
+<footer class="sf">
+  <div class="sf-inner">
+    <div class="sf-strip">
+      <div class="sf-brand">
+        <a class="sf-logo" href="#"><span class="sf-tile"><span style="color:#0a0a0a">e</span><span style="color:#65A30D">b</span></span><span class="sf-brandname">edBuddy</span></a>
+        <p class="sf-tag">AI skills built around the real work you do — hands-on, role-based, and certified.</p>
+        <div class="sf-trust"><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Trusted by 4,800+ professionals</div>
+        <div class="sf-soc"><a aria-label="LinkedIn" href="#"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V9.99H5.67v8.35zM7 8.84a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1m11.34 9.5v-4.58c0-2.45-1.31-3.59-3.06-3.59a2.64 2.64 0 0 0-2.39 1.32v-1.13h-2.67v8.35h2.67v-4.42c0-1.17.22-2.3 1.67-2.3s1.45 1.34 1.45 2.37v4.35z"/></svg></a><a aria-label="X" href="#"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L6 22H2.9l7.5-8.6L2 2h6.6l4.5 6.6zm-1.1 18h1.7L7.3 3.8H5.5z"/></svg></a><a aria-label="Instagram" href="#"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.06 2.7.13 4 1.4 4.1 4.1.06 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.13 2.7-1.4 4-4.1 4.1-1.1.06-1.4.06-4.1.06s-3 0-4.1-.06c-2.7-.13-4-1.4-4.1-4.1C3.7 15 3.7 14.7 3.7 12s0-3 .06-4.1C3.9 5.2 5.2 3.9 7.9 3.76 9 3.7 9.3 3.7 12 3.7M12 6.87A5.13 5.13 0 1 0 17.13 12 5.13 5.13 0 0 0 12 6.87m0 8.46A3.33 3.33 0 1 1 15.33 12 3.33 3.33 0 0 1 12 15.33m5.34-9.87a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2"/></svg></a><a aria-label="YouTube" href="#"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12M9.8 15.3V8.7l6 3.3z"/></svg></a></div>
+      </div>
+      <div class="sf-nl">
+        <div class="sf-nl-lbl">Get one AI tip a week</div>
+        <div class="sf-nl-input"><input placeholder="you@work.com"><button>Join</button></div>
+        <div class="sf-contact"><a href="mailto:hello@edbuddy.pro">hello@edbuddy.pro</a><br>Mon–Sat · 10am–7pm IST</div>
+      </div>
+    </div>
+    <div class="sf-cols">
+      <div class="sf-col"><h4>Courses</h4><a href="#">AI for HR</a><a href="#">AI for Finance</a><a href="#">AI for Product</a><a href="#">AI for Marketing</a><a href="#">AI for Sales</a><a href="#">Claude &amp; ChatGPT Combo</a><a href="#">Co-Pilot for Everyday</a><a href="#">Prompt Engineering</a><a href="index.html#courses" class="more">View all courses <svg viewBox="0 0 16 16"><line x1="3" y1="8" x2="13" y2="8"/><polyline points="9 4 13 8 9 12"/></svg></a></div>
+      <div class="sf-col"><h4>By role</h4><a href="#">HR</a><a href="#">Finance</a><a href="#">Product</a><a href="#">Marketing &amp; Content</a><a href="#">Sales</a><a href="#">Operations</a><a href="#">Data &amp; Analytics</a><a href="#">Customer Support</a><a href="#">Leadership</a></div>
+      <div class="sf-col"><h4>Company</h4><a href="#">About us</a><a href="#">Our story</a><a href="#">Careers</a><a href="#">Press &amp; media</a><a href="#">Blog</a><a href="#">Partners</a><a href="#">Affiliates</a><a href="#">Contact</a></div>
+      <div class="sf-col"><h4>Solutions &amp; Resources</h4><a href="#">For individuals</a><a href="#">For teams</a><a href="#">For enterprise</a><a href="#">Pricing</a><a href="#">Free guides</a><a href="#">Prompt library</a><a href="#">Webinars</a><a href="#">Help center</a><a href="#">Verify a certificate</a></div>
+      <div class="sf-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a><a href="#">Refund Policy</a><a href="#">Acceptable Use</a><a href="#">Accessibility</a><a href="#">Security</a><a href="#">Do Not Sell My Info</a><a href="#">Sitemap</a></div>
+    </div>
+    <div class="sf-trend">
+      <div class="sf-trend-lbl">Trending right now</div>
+      <div class="sf-pills"><a href="#">AI for HR</a><a href="#">AI for Finance</a><a href="#">Prompt Engineering</a><a href="#">ChatGPT for PMs</a><a href="#">AI for Marketing</a><a href="#">Claude for Analysts</a><a href="#">AI for Sales</a><a href="#">Co-Pilot Basics</a><a href="#">AI for Operations</a><a href="#">Resume with AI</a><a href="#">AI for Leaders</a><a href="#">Data with AI</a></div>
+    </div>
+    <div class="sf-bottom">
+      <div class="sf-bb-left">
+        <span>© 2026 edBuddy. All rights reserved.</span>
+        <span class="sf-bb-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Accessibility</a><a href="#">Sitemap</a></span>
+      </div>
+      <div class="sf-bb-right">
+        <button class="sf-region"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>India<svg class="chev" viewBox="0 0 16 16"><polyline points="4 6 8 10 12 6"/></svg></button>
+        <a class="sf-totop" href="#navbar">Back to top<svg viewBox="0 0 16 16"><line x1="8" y1="13" x2="8" y2="3"/><polyline points="4 7 8 3 12 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll behavior
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Close mega menu on outside click
+  document.addEventListener('click', (e) => {
+    const wrapper = e.target.closest('.nav-dropdown-wrapper');
+    document.querySelectorAll('.nav-dropdown-wrapper.open').forEach(el => {
+      if (el !== wrapper) el.classList.remove('open');
+    });
+  });
+
+  // Mobile buy bar — reveal once the enrol card has scrolled away,
+  // hide again over the final CTA so it never covers the same button.
+  (function () {
+    var bar  = document.getElementById('co-mobile');
+    var card = document.querySelector('.co-card');
+    var cta  = document.getElementById('enrol');
+    if (!bar || !card || !('IntersectionObserver' in window)) return;
+
+    var pastCard = false, atCta = false;
+    var sync = function () { bar.classList.toggle('show', pastCard && !atCta); };
+
+    new IntersectionObserver(function (e) {
+      pastCard = !e[0].isIntersecting;
+      sync();
+    }, { threshold: 0 }).observe(card);
+
+    new IntersectionObserver(function (e) {
+      atCta = e[0].isIntersecting;
+      sync();
+    }, { threshold: 0 }).observe(cta);
+  })();
+</script>
+
+</body>
+</html>
